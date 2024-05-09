@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F004F13-D7A4-414A-8F08-836B002D0462}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUIBaoCaoDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIBaoCaoDoanhThu.Designer.cs">
+      <DependentUpon>GUIBaoCaoDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIChiTietHoaDonNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIChiTietHoaDonNhapHang.Designer.cs">
+      <DependentUpon>GUIChiTietHoaDonNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIChiTietHoaDonXuatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIChiTietHoaDonXuatHang.Designer.cs">
+      <DependentUpon>GUIChiTietHoaDonXuatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIDangKy.Designer.cs">
+      <DependentUpon>GUIDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIDangNhap.Designer.cs">
+      <DependentUpon>GUIDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIDanhMucSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIDanhMucSanPham.Designer.cs">
+      <DependentUpon>GUIDanhMucSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIDoiMatKhau.Designer.cs">
+      <DependentUpon>GUIDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIHeThong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIHeThong.Designer.cs">
+      <DependentUpon>GUIHeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIHoaDonNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIHoaDonNhapHang.Designer.cs">
+      <DependentUpon>GUIHoaDonNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIHoaDonBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIHoaDonBanHang.Designer.cs">
+      <DependentUpon>GUIHoaDonBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIInChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIInChiTietHoaDon.Designer.cs">
+      <DependentUpon>GUIInChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIKhachHang.Designer.cs">
+      <DependentUpon>GUIKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUINhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUINhaCungCap.Designer.cs">
+      <DependentUpon>GUINhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUINhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUINhanVien.Designer.cs">
+      <DependentUpon>GUINhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIQuanLyNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIQuanLyNguoiDung.Designer.cs">
+      <DependentUpon>GUIQuanLyNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIQuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIQuenMatKhau.Designer.cs">
+      <DependentUpon>GUIQuenMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIThemSanPhamVaoHoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIThemSanPhamVaoHoaDonNhap.Designer.cs">
+      <DependentUpon>GUIThemSanPhamVaoHoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIThemSanPhamVaoHoaDonXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIThemSanPhamVaoHoaDonXuat.Designer.cs">
+      <DependentUpon>GUIThemSanPhamVaoHoaDonXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIThongKeSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIThongKeSanPham.Designer.cs">
+      <DependentUpon>GUIThongKeSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUIThongTinSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIThongTinSanPham.Designer.cs">
+      <DependentUpon>GUIThongTinSanPham.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUIBaoCaoDoanhThu.resx">
+      <DependentUpon>GUIBaoCaoDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIChiTietHoaDonNhapHang.resx">
+      <DependentUpon>GUIChiTietHoaDonNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIChiTietHoaDonXuatHang.resx">
+      <DependentUpon>GUIChiTietHoaDonXuatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIDangKy.resx">
+      <DependentUpon>GUIDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIDangNhap.resx">
+      <DependentUpon>GUIDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIDanhMucSanPham.resx">
+      <DependentUpon>GUIDanhMucSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIDoiMatKhau.resx">
+      <DependentUpon>GUIDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIHeThong.resx">
+      <DependentUpon>GUIHeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIHoaDonNhapHang.resx">
+      <DependentUpon>GUIHoaDonNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIHoaDonBanHang.resx">
+      <DependentUpon>GUIHoaDonBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIInChiTietHoaDon.resx">
+      <DependentUpon>GUIInChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIKhachHang.resx">
+      <DependentUpon>GUIKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUINhaCungCap.resx">
+      <DependentUpon>GUINhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUINhanVien.resx">
+      <DependentUpon>GUINhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIQuanLyNguoiDung.resx">
+      <DependentUpon>GUIQuanLyNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIThongKeSanPham.resx">
+      <DependentUpon>GUIThongKeSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIThongTinSanPham.resx">
+      <DependentUpon>GUIThongTinSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIThemSanPhamVaoHoaDonNhap.resx">
+      <DependentUpon>GUIThemSanPhamVaoHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIThemSanPhamVaoHoaDonXuat.resx">
+      <DependentUpon>GUIThemSanPhamVaoHoaDonXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BUS.csproj">
+      <Project>{30adfc52-477d-4d30-b944-246f957f5b01}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{9d74d38d-42d5-49fb-8078-77dacbb47e6b}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
