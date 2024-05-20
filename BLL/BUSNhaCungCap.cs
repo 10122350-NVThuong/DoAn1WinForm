@@ -13,8 +13,9 @@ namespace BLL
     {
         public static DataTable DodulieuPKN(string TenBang)
         {
-            return DALSanPham.DodulieuPKN(TenBang);
+            return DALNhaCungCap.DodulieuPKN(TenBang);
         }
+
         public static void ThemNhaCungCap(DTONhaCungCap nhaCungCap)
         {
             if (nhaCungCap.IDNCC == "")
@@ -70,7 +71,7 @@ namespace BLL
         }
         public static DataTable TimKiem(string tablename, string columnname, string thonhtintimkiem)
         {
-            return DALSanPham.TimKiem(tablename, columnname, thonhtintimkiem);
+            return DALNhaCungCap.TimKiem(tablename, columnname, thonhtintimkiem);
         }
     }
 }

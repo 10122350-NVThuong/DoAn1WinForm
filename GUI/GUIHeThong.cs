@@ -28,6 +28,7 @@ namespace GUI
                 BCTKToolStrip.Enabled = false;
                 QLNVToolStrip.Enabled = false;
                 DangKyToolStrip.Enabled = false;
+                QLNDToolStrip.Enabled = false;
             }
         }
 
@@ -162,6 +163,48 @@ namespace GUI
             GUIQuanLyNguoiDung quanLyNguoiDung = new GUIQuanLyNguoiDung();
             this.Hide();
             quanLyNguoiDung.ShowDialog();
+
+            this.Show();
+        }
+
+        private void InAnToolStrip_Click(object sender, EventArgs e)
+        {
+            GUIInHoaDon inHoaDon = new GUIInHoaDon();
+            this.Hide();
+            inHoaDon.ShowDialog();
+
+            this.Show();
+        }
+
+        private void SanPhamTonKhoTollStrip_Click(object sender, EventArgs e)
+        {
+            rptThongKeSPTon report = new rptThongKeSPTon();
+            report.SetDataSource(BUSSanPham.ThongKeSanPhamTon());
+            GUIFrmBaoCao frm = new GUIFrmBaoCao();
+            frm.CRreport.ReportSource = report;
+            this.Hide();
+            frm.ShowDialog();
+
+            this.Show();
+        }
+
+        private void ThongKeDoanhThuToolStrip_Click(object sender, EventArgs e)
+        {
+            GUIThongKeDoanhThu dt = new GUIThongKeDoanhThu();
+            this.Hide();
+            dt.ShowDialog();
+
+            this.Show();
+        }
+
+        private void ThongKeSPbanchayToolStrip_Click(object sender, EventArgs e)
+        {
+            rptThongKeSPBanChay report = new rptThongKeSPBanChay();
+            report.SetDataSource(BUSSanPham.ThongKeSanPhamBanChay());
+            GUIFrmBaoCao frm = new GUIFrmBaoCao();
+            frm.CRreport.ReportSource = report;
+            this.Hide();
+            frm.ShowDialog();
 
             this.Show();
         }

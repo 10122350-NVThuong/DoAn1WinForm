@@ -102,6 +102,16 @@ namespace DAL
             ngatketnoi();
             return dt;
         }
+        public static DataTable LoadComboboxPKN2(string TenBang, string Ma)
+        {
+            KetNoi();
+            da = new SqlDataAdapter($"select {Ma} from {TenBang}", chuoikn);
+            dt = new DataTable();
+            dt.Clear();
+            da.Fill(dt);
+            ngatketnoi();
+            return dt;
+        }
         public static DataTable TimKiem(string tablename, string columnname, string thonhtintimkiem)
         {
             KetNoi();
@@ -135,7 +145,6 @@ namespace DAL
             ngatketnoi();
             return result;
         }
-
 
     }
 

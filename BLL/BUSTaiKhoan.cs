@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using DTO;
 using System.Data;
+using System.Net.Mail;
+using System.Net;
 
 namespace BLL
 {
@@ -19,8 +21,8 @@ namespace BLL
             }
             else
             {
-            int i = DataBase.KtrDN(tk);
-            return i;
+                int i = DataBase.KtrDN(tk);
+                return i;
             }
         }
         public static void UpDateMatKhau(DTOTaiKhoan tkc, DTOTaiKhoan tkm)
@@ -32,6 +34,37 @@ namespace BLL
             else
             {
                 DALTaiKhoan.UpDateMatKhau(tkm);
+            }
+        }
+        public static void QuenMatKhau(DTOTaiKhoan tk)
+        {
+            if (tk.MatKhau == "")
+            {
+                throw new Exception("Mật khẩu không được bỏ trống");
+            }
+            else
+            {
+                DALTaiKhoan.UpDateMatKhau(tk);
+            }
+        }
+        public static int sendEmail(DTONhanVien nv, DTOTaiKhoan tk)
+        {
+            if (nv.Email == "")
+            {
+                throw new Exception("Email không được bỏ trống");
+            }
+            else if(nv.Email.Contains('@') is false)
+            {
+                throw new Exception("Email chưa đúng định dạng");
+            }
+            else if (nv.Email.Trim() != DALTaiKhoan.LayEmailNV(tk).Trim())
+            {
+                throw new Exception("Email đăng ký tài khoản chưa chính xác");
+
+            }
+            else
+            {
+                return DALTaiKhoan.sendEmail(nv);
             }
         }
         public static DataTable DocTaiKhoanNguoiDung()

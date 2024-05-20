@@ -71,7 +71,7 @@
             this.groupBox4.Controls.Add(this.btnXoa);
             this.groupBox4.Controls.Add(this.btnSua);
             this.groupBox4.Controls.Add(this.btnThem);
-            this.groupBox4.Location = new System.Drawing.Point(415, 101);
+            this.groupBox4.Location = new System.Drawing.Point(638, 108);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
@@ -142,7 +142,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(410, 115);
+            this.groupBox3.Size = new System.Drawing.Size(633, 115);
             this.groupBox3.TabIndex = 42;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin mặt hàng";
@@ -158,13 +158,13 @@
             this.txtGiaCa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGiaCa.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtGiaCa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGiaCa.Location = new System.Drawing.Point(297, 74);
+            this.txtGiaCa.Location = new System.Drawing.Point(440, 74);
             this.txtGiaCa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtGiaCa.Name = "txtGiaCa";
             this.txtGiaCa.PasswordChar = '\0';
             this.txtGiaCa.PlaceholderText = "";
             this.txtGiaCa.SelectedText = "";
-            this.txtGiaCa.Size = new System.Drawing.Size(87, 33);
+            this.txtGiaCa.Size = new System.Drawing.Size(111, 33);
             this.txtGiaCa.TabIndex = 12;
             // 
             // txtSoLuongNhap
@@ -178,13 +178,13 @@
             this.txtSoLuongNhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoLuongNhap.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSoLuongNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoLuongNhap.Location = new System.Drawing.Point(297, 28);
+            this.txtSoLuongNhap.Location = new System.Drawing.Point(440, 28);
             this.txtSoLuongNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSoLuongNhap.Name = "txtSoLuongNhap";
             this.txtSoLuongNhap.PasswordChar = '\0';
             this.txtSoLuongNhap.PlaceholderText = "";
             this.txtSoLuongNhap.SelectedText = "";
-            this.txtSoLuongNhap.Size = new System.Drawing.Size(87, 33);
+            this.txtSoLuongNhap.Size = new System.Drawing.Size(111, 33);
             this.txtSoLuongNhap.TabIndex = 12;
             // 
             // txtMaSP
@@ -198,13 +198,13 @@
             this.txtMaSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaSP.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaSP.Location = new System.Drawing.Point(104, 80);
+            this.txtMaSP.Location = new System.Drawing.Point(118, 80);
             this.txtMaSP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.PasswordChar = '\0';
             this.txtMaSP.PlaceholderText = "";
             this.txtMaSP.SelectedText = "";
-            this.txtMaSP.Size = new System.Drawing.Size(78, 33);
+            this.txtMaSP.Size = new System.Drawing.Size(122, 33);
             this.txtMaSP.TabIndex = 12;
             // 
             // txtIDHoaDonNhap
@@ -218,19 +218,19 @@
             this.txtIDHoaDonNhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDHoaDonNhap.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtIDHoaDonNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDHoaDonNhap.Location = new System.Drawing.Point(104, 28);
+            this.txtIDHoaDonNhap.Location = new System.Drawing.Point(118, 28);
             this.txtIDHoaDonNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtIDHoaDonNhap.Name = "txtIDHoaDonNhap";
             this.txtIDHoaDonNhap.PasswordChar = '\0';
             this.txtIDHoaDonNhap.PlaceholderText = "";
             this.txtIDHoaDonNhap.SelectedText = "";
-            this.txtIDHoaDonNhap.Size = new System.Drawing.Size(78, 33);
+            this.txtIDHoaDonNhap.Size = new System.Drawing.Size(122, 33);
             this.txtIDHoaDonNhap.TabIndex = 12;
             // 
             // lbl5
             // 
             this.lbl5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl5.Location = new System.Drawing.Point(4, 28);
+            this.lbl5.Location = new System.Drawing.Point(18, 28);
             this.lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(95, 33);
@@ -241,7 +241,7 @@
             // lbl6
             // 
             this.lbl6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl6.Location = new System.Drawing.Point(23, 80);
+            this.lbl6.Location = new System.Drawing.Point(37, 80);
             this.lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(76, 33);
@@ -252,7 +252,7 @@
             // lbl7
             // 
             this.lbl7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl7.Location = new System.Drawing.Point(200, 28);
+            this.lbl7.Location = new System.Drawing.Point(343, 28);
             this.lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(86, 33);
@@ -263,7 +263,7 @@
             // lbl8
             // 
             this.lbl8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl8.Location = new System.Drawing.Point(217, 74);
+            this.lbl8.Location = new System.Drawing.Point(360, 74);
             this.lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl8.Name = "lbl8";
             this.lbl8.Size = new System.Drawing.Size(69, 33);
@@ -281,7 +281,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(286, 95);
+            this.groupBox1.Size = new System.Drawing.Size(339, 95);
             this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
@@ -303,7 +303,7 @@
             this.txtTenNhanVien.PasswordChar = '\0';
             this.txtTenNhanVien.PlaceholderText = "";
             this.txtTenNhanVien.SelectedText = "";
-            this.txtTenNhanVien.Size = new System.Drawing.Size(135, 25);
+            this.txtTenNhanVien.Size = new System.Drawing.Size(179, 25);
             this.txtTenNhanVien.TabIndex = 3;
             // 
             // txtIDNV
@@ -323,7 +323,7 @@
             this.txtIDNV.PasswordChar = '\0';
             this.txtIDNV.PlaceholderText = "";
             this.txtIDNV.SelectedText = "";
-            this.txtIDNV.Size = new System.Drawing.Size(135, 29);
+            this.txtIDNV.Size = new System.Drawing.Size(179, 29);
             this.txtIDNV.TabIndex = 2;
             // 
             // lbl2
@@ -395,7 +395,7 @@
             this.dtgvChitietHDNhap.Name = "dtgvChitietHDNhap";
             this.dtgvChitietHDNhap.RowHeadersWidth = 51;
             this.dtgvChitietHDNhap.RowTemplate.Height = 24;
-            this.dtgvChitietHDNhap.Size = new System.Drawing.Size(540, 139);
+            this.dtgvChitietHDNhap.Size = new System.Drawing.Size(741, 242);
             this.dtgvChitietHDNhap.TabIndex = 37;
             this.dtgvChitietHDNhap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvChitietHDNhap_CellClick);
             // 
@@ -427,11 +427,11 @@
             this.groupBox2.Controls.Add(this.txtIDNCC);
             this.groupBox2.Controls.Add(this.lbl3);
             this.groupBox2.Controls.Add(this.lbl4);
-            this.groupBox2.Location = new System.Drawing.Point(292, 1);
+            this.groupBox2.Location = new System.Drawing.Point(344, 2);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(311, 96);
+            this.groupBox2.Size = new System.Drawing.Size(482, 96);
             this.groupBox2.TabIndex = 41;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin nhà cung cấp";
@@ -453,7 +453,7 @@
             this.txtTenNCC.PasswordChar = '\0';
             this.txtTenNCC.PlaceholderText = "";
             this.txtTenNCC.SelectedText = "";
-            this.txtTenNCC.Size = new System.Drawing.Size(161, 29);
+            this.txtTenNCC.Size = new System.Drawing.Size(310, 29);
             this.txtTenNCC.TabIndex = 3;
             // 
             // txtIDNCC
@@ -473,14 +473,14 @@
             this.txtIDNCC.PasswordChar = '\0';
             this.txtIDNCC.PlaceholderText = "";
             this.txtIDNCC.SelectedText = "";
-            this.txtIDNCC.Size = new System.Drawing.Size(161, 29);
+            this.txtIDNCC.Size = new System.Drawing.Size(182, 29);
             this.txtIDNCC.TabIndex = 3;
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(542, 252);
+            this.btnThanhToan.Location = new System.Drawing.Point(747, 253);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(64, 139);
+            this.btnThanhToan.Size = new System.Drawing.Size(77, 241);
             this.btnThanhToan.TabIndex = 46;
             this.btnThanhToan.Text = "Thanh Toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
@@ -490,7 +490,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 392);
+            this.ClientSize = new System.Drawing.Size(829, 518);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);

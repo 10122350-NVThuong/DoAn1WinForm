@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class GUIThongKeSanPham
+    partial class GUIFrmBaoCao
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnThongKe = new System.Windows.Forms.Button();
+            this.CRreport = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // btnThongKe
+            // CRreport
             // 
-            this.btnThongKe.Location = new System.Drawing.Point(67, 51);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(249, 73);
-            this.btnThongKe.TabIndex = 0;
-            this.btnThongKe.Text = "Thống kê sản phẩm tồn kho";
-            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.CRreport.ActiveViewIndex = -1;
+            this.CRreport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CRreport.Cursor = System.Windows.Forms.Cursors.Default;
+            this.CRreport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CRreport.Location = new System.Drawing.Point(0, 0);
+            this.CRreport.Name = "CRreport";
+            this.CRreport.Size = new System.Drawing.Size(800, 450);
+            this.CRreport.TabIndex = 0;
             // 
-            // GUIThongKeSanPham
+            // GUIFrmBaoCao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 207);
-            this.Controls.Add(this.btnThongKe);
-            this.Name = "GUIThongKeSanPham";
-            this.Text = "GUIThongKeSanPham";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CRreport);
+            this.Name = "GUIFrmBaoCao";
+            this.Text = "GUIFrmBaoCao";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnThongKe;
+        public CrystalDecisions.Windows.Forms.CrystalReportViewer CRreport;
     }
 }

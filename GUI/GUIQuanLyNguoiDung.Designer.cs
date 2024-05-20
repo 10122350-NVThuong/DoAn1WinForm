@@ -52,9 +52,10 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(2, 189);
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.groupBox1.Location = new System.Drawing.Point(2, 232);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(632, 121);
+            this.groupBox1.Size = new System.Drawing.Size(743, 182);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin người dùng";
@@ -70,13 +71,13 @@
             this.txtTenNhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTenNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenNhanVien.Location = new System.Drawing.Point(430, 81);
+            this.txtTenNhanVien.Location = new System.Drawing.Point(445, 117);
             this.txtTenNhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenNhanVien.Name = "txtTenNhanVien";
             this.txtTenNhanVien.PasswordChar = '\0';
             this.txtTenNhanVien.PlaceholderText = "";
             this.txtTenNhanVien.SelectedText = "";
-            this.txtTenNhanVien.Size = new System.Drawing.Size(174, 33);
+            this.txtTenNhanVien.Size = new System.Drawing.Size(247, 46);
             this.txtTenNhanVien.TabIndex = 5;
             // 
             // txtMatKhau
@@ -90,13 +91,13 @@
             this.txtMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatKhau.Location = new System.Drawing.Point(96, 81);
+            this.txtMatKhau.Location = new System.Drawing.Point(90, 117);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '\0';
             this.txtMatKhau.PlaceholderText = "";
             this.txtMatKhau.SelectedText = "";
-            this.txtMatKhau.Size = new System.Drawing.Size(174, 33);
+            this.txtMatKhau.Size = new System.Drawing.Size(174, 46);
             this.txtMatKhau.TabIndex = 5;
             // 
             // txtQuyen
@@ -110,13 +111,13 @@
             this.txtQuyen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuyen.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtQuyen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQuyen.Location = new System.Drawing.Point(430, 22);
+            this.txtQuyen.Location = new System.Drawing.Point(445, 31);
             this.txtQuyen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtQuyen.Name = "txtQuyen";
             this.txtQuyen.PasswordChar = '\0';
             this.txtQuyen.PlaceholderText = "";
             this.txtQuyen.SelectedText = "";
-            this.txtQuyen.Size = new System.Drawing.Size(174, 33);
+            this.txtQuyen.Size = new System.Drawing.Size(148, 46);
             this.txtQuyen.TabIndex = 5;
             // 
             // txtTenDangNhap
@@ -130,22 +131,22 @@
             this.txtTenDangNhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTenDangNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(96, 22);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(93, 31);
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.PasswordChar = '\0';
             this.txtTenDangNhap.PlaceholderText = "";
             this.txtTenDangNhap.SelectedText = "";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(174, 33);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(174, 46);
             this.txtTenDangNhap.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(17, 81);
+            this.label2.Location = new System.Drawing.Point(11, 117);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 33);
+            this.label2.Size = new System.Drawing.Size(69, 46);
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -153,10 +154,10 @@
             // label4
             // 
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(292, 81);
+            this.label4.Location = new System.Drawing.Point(310, 117);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 33);
+            this.label4.Size = new System.Drawing.Size(102, 46);
             this.label4.TabIndex = 4;
             this.label4.Text = "Tên người dùng";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -164,10 +165,10 @@
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(11, 22);
+            this.label1.Location = new System.Drawing.Point(8, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 33);
+            this.label1.Size = new System.Drawing.Size(72, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "Username";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -175,10 +176,10 @@
             // label3
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(346, 22);
+            this.label3.Location = new System.Drawing.Point(336, 31);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 33);
+            this.label3.Size = new System.Drawing.Size(76, 46);
             this.label3.TabIndex = 3;
             this.label3.Text = "Quyền";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -191,7 +192,7 @@
             this.dtgvND.Name = "dtgvND";
             this.dtgvND.RowHeadersWidth = 51;
             this.dtgvND.RowTemplate.Height = 24;
-            this.dtgvND.Size = new System.Drawing.Size(632, 180);
+            this.dtgvND.Size = new System.Drawing.Size(743, 223);
             this.dtgvND.TabIndex = 12;
             this.dtgvND.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvND_CellClick);
             // 
@@ -199,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 318);
+            this.ClientSize = new System.Drawing.Size(752, 426);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dtgvND);
             this.Name = "GUIQuanLyNguoiDung";

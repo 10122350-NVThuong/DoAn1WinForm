@@ -27,7 +27,7 @@ namespace DAL
         }
         public static void SuaChiTietHoaDon(DTOChiTietHoaDonBan chiTiet)
         {
-            string Sua = $"update tblChiTietHDBan set Slban = {chiTiet.SoLuongBan},  Dgban = {chiTiet.GiaBan} where IDHoaDonBan = {chiTiet.IDHoaDonBan} and MaSP = '{chiTiet.MaSP}'";
+            string Sua = $"update tblChiTietHDBan set Slban = {chiTiet.SoLuongBan},  Dgban = convert(float,{chiTiet.GiaBan}) where IDHoaDonBan = {chiTiet.IDHoaDonBan} and MaSP = '{chiTiet.MaSP}'";
             SQLConnect.ThucThi(Sua);
         }
         public static void XoaSanPham(DTOChiTietHoaDonBan chiTiet)

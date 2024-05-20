@@ -14,11 +14,19 @@ namespace BLL
 
         public static DataTable DodulieuPKN(string TenBang)
         {
-            return SQLConnect.DodulieuPKN(TenBang);
+            return DALHoaDonNhapHang.DodulieuPKN(TenBang);
+        }
+        public static DataTable ĐoculieuSanPham(DTOHoaDonNhap hoaDonNhap)
+        {
+            return DALHoaDonNhapHang.ĐoculieuSanPham(hoaDonNhap);
         }
         public static DataTable LoadComboboxPKN(string TenBang)
         {
             return SQLConnect.LoadComboboxPKN(TenBang);
+        }
+        public static DataTable LoadMaHDN()
+        {
+            return DALHoaDonNhapHang.LoadMaHDN();
         }
         public static void TaoHoaDonNhap(DTOHoaDonNhap hoaDonNhap)
         {
@@ -57,6 +65,10 @@ namespace BLL
         public static int XetHoaDon(DTOHoaDonNhap hoaDonNhap)
         {
             return DALHoaDonNhapHang.XetHoaDon(hoaDonNhap);
+        }
+        public static DataTable InHoaDonNhap(DTOHoaDonNhap hdn)
+        {
+            return DALHoaDonNhapHang.InHoaDonNhap(hdn);
         }
     }
 }

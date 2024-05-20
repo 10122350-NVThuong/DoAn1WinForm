@@ -22,8 +22,10 @@ namespace GUI
             chiTietHoaDonNhap = new DTOChiTietHoaDonNhap();
         }
 
+        DTOHoaDonNhap hdn = new DTOHoaDonNhap();
         private void btThem_Click(object sender, EventArgs e)
         {
+            hdn.IDNCC = GUIHoaDonNhapHang.hoaDonNhapHang.IDNCC;
             chiTietHoaDonNhap.IDHoaDonNhap = GUIHoaDonNhapHang.IDHoaDon;
             chiTietHoaDonNhap.MaSP = txtMaSP.Text;
             chiTietHoaDonNhap.SoLuongNhap = Convert.ToInt32(txtSoLuongNhap.Text);
@@ -32,7 +34,7 @@ namespace GUI
             {
                 BUSChiTietHoaDonNhap.ThemSanPhamVaoHoaDon(chiTietHoaDonNhap);
                 MessageBox.Show($"Nhập thành công sản phảm có mã {chiTietHoaDonNhap.MaSP}");
-                dtgvSP.DataSource = BUSSanPham.DodulieuPKN("tblMatHang");
+                dtgvSP.DataSource = BUSHoaDonNhap.ĐoculieuSanPham(hdn);
             }
             catch (Exception ex)
             {
@@ -42,7 +44,8 @@ namespace GUI
 
         private void GUIThemSanPhamVaoHoaDonNhap_Load(object sender, EventArgs e)
         {
-            dtgvSP.DataSource = BUSSanPham.DodulieuPKN("tblMatHang");
+            hdn.IDNCC = GUIHoaDonNhapHang.hoaDonNhapHang.IDNCC;
+            dtgvSP.DataSource = BUSHoaDonNhap.ĐoculieuSanPham(hdn);
         }
 
         private void btnlm_Click(object sender, EventArgs e)

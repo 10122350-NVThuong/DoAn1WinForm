@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -41,6 +47,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,12 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUIBaoCaoDoanhThu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUIBaoCaoDoanhThu.Designer.cs">
-      <DependentUpon>GUIBaoCaoDoanhThu.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUIChiTietHoaDonNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +95,12 @@
     <Compile Include="GUIDoiMatKhau.Designer.cs">
       <DependentUpon>GUIDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUIFrmBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIFrmBaoCao.Designer.cs">
+      <DependentUpon>GUIFrmBaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUIHeThong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,11 +119,11 @@
     <Compile Include="GUIHoaDonBanHang.Designer.cs">
       <DependentUpon>GUIHoaDonBanHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUIInChiTietHoaDon.cs">
+    <Compile Include="GUIInHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUIInChiTietHoaDon.Designer.cs">
-      <DependentUpon>GUIInChiTietHoaDon.cs</DependentUpon>
+    <Compile Include="GUIInHoaDon.Designer.cs">
+      <DependentUpon>GUIInHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="GUIKhachHang.cs">
       <SubType>Form</SubType>
@@ -160,11 +167,11 @@
     <Compile Include="GUIThemSanPhamVaoHoaDonXuat.Designer.cs">
       <DependentUpon>GUIThemSanPhamVaoHoaDonXuat.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUIThongKeSanPham.cs">
+    <Compile Include="GUIThongKeDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUIThongKeSanPham.Designer.cs">
-      <DependentUpon>GUIThongKeSanPham.cs</DependentUpon>
+    <Compile Include="GUIThongKeDoanhThu.Designer.cs">
+      <DependentUpon>GUIThongKeDoanhThu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -174,9 +181,36 @@
     <Compile Include="GUIThongTinSanPham.Designer.cs">
       <DependentUpon>GUIThongTinSanPham.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="GUIBaoCaoDoanhThu.resx">
-      <DependentUpon>GUIBaoCaoDoanhThu.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="rptInHoaDonBan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInHoaDonBan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInHoaDonNhap.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInHoaDonNhap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptThongKeDoanhThu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptThongKeDoanhThu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptThongKeSPBanChay.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptThongKeSPBanChay.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptThongKeSPTon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptThongKeSPTon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="GUIChiTietHoaDonNhapHang.resx">
       <DependentUpon>GUIChiTietHoaDonNhapHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +229,9 @@
     <EmbeddedResource Include="GUIDoiMatKhau.resx">
       <DependentUpon>GUIDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUIFrmBaoCao.resx">
+      <DependentUpon>GUIFrmBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUIHeThong.resx">
       <DependentUpon>GUIHeThong.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,8 +241,8 @@
     <EmbeddedResource Include="GUIHoaDonBanHang.resx">
       <DependentUpon>GUIHoaDonBanHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUIInChiTietHoaDon.resx">
-      <DependentUpon>GUIInChiTietHoaDon.cs</DependentUpon>
+    <EmbeddedResource Include="GUIInHoaDon.resx">
+      <DependentUpon>GUIInHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUIKhachHang.resx">
       <DependentUpon>GUIKhachHang.cs</DependentUpon>
@@ -219,8 +256,11 @@
     <EmbeddedResource Include="GUIQuanLyNguoiDung.resx">
       <DependentUpon>GUIQuanLyNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUIThongKeSanPham.resx">
-      <DependentUpon>GUIThongKeSanPham.cs</DependentUpon>
+    <EmbeddedResource Include="GUIQuenMatKhau.resx">
+      <DependentUpon>GUIQuenMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUIThongKeDoanhThu.resx">
+      <DependentUpon>GUIThongKeDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUIThongTinSanPham.resx">
       <DependentUpon>GUIThongTinSanPham.cs</DependentUpon>
@@ -240,6 +280,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rptInHoaDonBan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInHoaDonBan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInHoaDonNhap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInHoaDonNhap.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptThongKeDoanhThu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptThongKeDoanhThu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptThongKeSPBanChay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptThongKeSPBanChay.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptThongKeSPTon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptThongKeSPTon.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -301,6 +361,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

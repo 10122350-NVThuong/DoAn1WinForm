@@ -41,6 +41,8 @@
             this.btupdate = new System.Windows.Forms.Button();
             this.btreset = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboIDNCC = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtSoLuongTon = new Guna.UI2.WinForms.Guna2TextBox();
             this.cboMaDanhMuc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtGiaSP = new Guna.UI2.WinForms.Guna2TextBox();
@@ -81,7 +83,7 @@
             this.dtgvQLSP.ColumnHeadersHeight = 18;
             this.dtgvQLSP.EnableHeadersVisualStyles = false;
             this.dtgvQLSP.GridColor = System.Drawing.Color.DimGray;
-            this.dtgvQLSP.Location = new System.Drawing.Point(3, 211);
+            this.dtgvQLSP.Location = new System.Drawing.Point(-6, 256);
             this.dtgvQLSP.Name = "dtgvQLSP";
             this.dtgvQLSP.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -95,7 +97,7 @@
             this.dtgvQLSP.RowHeadersWidth = 51;
             this.dtgvQLSP.RowTemplate.Height = 24;
             this.dtgvQLSP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvQLSP.Size = new System.Drawing.Size(614, 210);
+            this.dtgvQLSP.Size = new System.Drawing.Size(803, 249);
             this.dtgvQLSP.TabIndex = 19;
             this.dtgvQLSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvQLSP_CellClick);
             // 
@@ -104,9 +106,9 @@
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupBox3.Controls.Add(this.gtxtTimKiem);
             this.groupBox3.Controls.Add(this.cbluachontimkiem);
-            this.groupBox3.Location = new System.Drawing.Point(523, 2);
+            this.groupBox3.Location = new System.Drawing.Point(726, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(326, 203);
+            this.groupBox3.Size = new System.Drawing.Size(326, 251);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm hàng hóa";
@@ -114,7 +116,7 @@
             // gtxtTimKiem
             // 
             this.gtxtTimKiem.AutoRoundedCorners = true;
-            this.gtxtTimKiem.BorderRadius = 19;
+            this.gtxtTimKiem.BorderRadius = 29;
             this.gtxtTimKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.gtxtTimKiem.DefaultText = "";
             this.gtxtTimKiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -125,13 +127,13 @@
             this.gtxtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gtxtTimKiem.ForeColor = System.Drawing.Color.Black;
             this.gtxtTimKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtxtTimKiem.Location = new System.Drawing.Point(11, 73);
+            this.gtxtTimKiem.Location = new System.Drawing.Point(7, 142);
             this.gtxtTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gtxtTimKiem.Name = "gtxtTimKiem";
             this.gtxtTimKiem.PasswordChar = '\0';
             this.gtxtTimKiem.PlaceholderText = "Nhập thông tin muốn tìm kiếm";
             this.gtxtTimKiem.SelectedText = "";
-            this.gtxtTimKiem.Size = new System.Drawing.Size(312, 40);
+            this.gtxtTimKiem.Size = new System.Drawing.Size(312, 61);
             this.gtxtTimKiem.TabIndex = 1;
             this.gtxtTimKiem.TextChanged += new System.EventHandler(this.gtxtTimKiem_TextChanged);
             // 
@@ -151,9 +153,9 @@
             "Mã sản phẩm",
             "Tên sản phẩm",
             "Mã danh mục"});
-            this.cbluachontimkiem.Location = new System.Drawing.Point(7, 28);
+            this.cbluachontimkiem.Location = new System.Drawing.Point(11, 68);
             this.cbluachontimkiem.Name = "cbluachontimkiem";
-            this.cbluachontimkiem.Size = new System.Drawing.Size(311, 36);
+            this.cbluachontimkiem.Size = new System.Drawing.Size(309, 36);
             this.cbluachontimkiem.TabIndex = 0;
             // 
             // groupBox2
@@ -163,9 +165,9 @@
             this.groupBox2.Controls.Add(this.btdelete);
             this.groupBox2.Controls.Add(this.btupdate);
             this.groupBox2.Controls.Add(this.btreset);
-            this.groupBox2.Location = new System.Drawing.Point(623, 211);
+            this.groupBox2.Location = new System.Drawing.Point(812, 259);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(226, 210);
+            this.groupBox2.Size = new System.Drawing.Size(243, 249);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -175,10 +177,10 @@
             this.btThem.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThem.Location = new System.Drawing.Point(3, 23);
+            this.btThem.Location = new System.Drawing.Point(3, 22);
             this.btThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(220, 47);
+            this.btThem.Size = new System.Drawing.Size(237, 57);
             this.btThem.TabIndex = 14;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
@@ -189,10 +191,10 @@
             this.btdelete.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btdelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btdelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btdelete.Location = new System.Drawing.Point(3, 70);
+            this.btdelete.Location = new System.Drawing.Point(3, 79);
             this.btdelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btdelete.Name = "btdelete";
-            this.btdelete.Size = new System.Drawing.Size(220, 45);
+            this.btdelete.Size = new System.Drawing.Size(237, 55);
             this.btdelete.TabIndex = 12;
             this.btdelete.Text = "Xóa";
             this.btdelete.UseVisualStyleBackColor = true;
@@ -203,10 +205,10 @@
             this.btupdate.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btupdate.Location = new System.Drawing.Point(3, 115);
+            this.btupdate.Location = new System.Drawing.Point(3, 134);
             this.btupdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btupdate.Name = "btupdate";
-            this.btupdate.Size = new System.Drawing.Size(220, 47);
+            this.btupdate.Size = new System.Drawing.Size(237, 57);
             this.btupdate.TabIndex = 11;
             this.btupdate.Text = "Sửa";
             this.btupdate.UseVisualStyleBackColor = true;
@@ -217,10 +219,10 @@
             this.btreset.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btreset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btreset.Location = new System.Drawing.Point(3, 162);
+            this.btreset.Location = new System.Drawing.Point(3, 191);
             this.btreset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btreset.Name = "btreset";
-            this.btreset.Size = new System.Drawing.Size(220, 45);
+            this.btreset.Size = new System.Drawing.Size(237, 55);
             this.btreset.TabIndex = 9;
             this.btreset.Text = "Làm mới";
             this.btreset.UseVisualStyleBackColor = true;
@@ -229,6 +231,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox1.Controls.Add(this.cboIDNCC);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtSoLuongTon);
             this.groupBox1.Controls.Add(this.cboMaDanhMuc);
             this.groupBox1.Controls.Add(this.txtGiaSP);
@@ -241,15 +245,41 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(514, 203);
+            this.groupBox1.Size = new System.Drawing.Size(724, 251);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sản phẩm";
             // 
+            // cboIDNCC
+            // 
+            this.cboIDNCC.BackColor = System.Drawing.Color.Transparent;
+            this.cboIDNCC.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboIDNCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboIDNCC.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboIDNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboIDNCC.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboIDNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboIDNCC.ItemHeight = 30;
+            this.cboIDNCC.Location = new System.Drawing.Point(541, 38);
+            this.cboIDNCC.Name = "cboIDNCC";
+            this.cboIDNCC.Size = new System.Drawing.Size(153, 36);
+            this.cboIDNCC.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(383, 37);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(143, 36);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Mã nhà cung cấp";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // txtSoLuongTon
             // 
             this.txtSoLuongTon.AutoRoundedCorners = true;
-            this.txtSoLuongTon.BorderRadius = 17;
+            this.txtSoLuongTon.BorderRadius = 25;
             this.txtSoLuongTon.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSoLuongTon.DefaultText = "0";
             this.txtSoLuongTon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -260,13 +290,13 @@
             this.txtSoLuongTon.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoLuongTon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSoLuongTon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoLuongTon.Location = new System.Drawing.Point(394, 28);
+            this.txtSoLuongTon.Location = new System.Drawing.Point(550, 107);
             this.txtSoLuongTon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSoLuongTon.Name = "txtSoLuongTon";
             this.txtSoLuongTon.PasswordChar = '\0';
             this.txtSoLuongTon.PlaceholderText = "";
             this.txtSoLuongTon.SelectedText = "";
-            this.txtSoLuongTon.Size = new System.Drawing.Size(114, 36);
+            this.txtSoLuongTon.Size = new System.Drawing.Size(144, 52);
             this.txtSoLuongTon.TabIndex = 13;
             // 
             // cboMaDanhMuc
@@ -281,15 +311,15 @@
             this.cboMaDanhMuc.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMaDanhMuc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cboMaDanhMuc.ItemHeight = 30;
-            this.cboMaDanhMuc.Location = new System.Drawing.Point(148, 143);
+            this.cboMaDanhMuc.Location = new System.Drawing.Point(164, 184);
             this.cboMaDanhMuc.Name = "cboMaDanhMuc";
-            this.cboMaDanhMuc.Size = new System.Drawing.Size(164, 36);
+            this.cboMaDanhMuc.Size = new System.Drawing.Size(186, 36);
             this.cboMaDanhMuc.TabIndex = 0;
             // 
             // txtGiaSP
             // 
             this.txtGiaSP.AutoRoundedCorners = true;
-            this.txtGiaSP.BorderRadius = 17;
+            this.txtGiaSP.BorderRadius = 25;
             this.txtGiaSP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGiaSP.DefaultText = "0";
             this.txtGiaSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -300,19 +330,19 @@
             this.txtGiaSP.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtGiaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGiaSP.Location = new System.Drawing.Point(394, 87);
+            this.txtGiaSP.Location = new System.Drawing.Point(550, 186);
             this.txtGiaSP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtGiaSP.Name = "txtGiaSP";
             this.txtGiaSP.PasswordChar = '\0';
             this.txtGiaSP.PlaceholderText = "";
             this.txtGiaSP.SelectedText = "";
-            this.txtGiaSP.Size = new System.Drawing.Size(114, 36);
+            this.txtGiaSP.Size = new System.Drawing.Size(144, 52);
             this.txtGiaSP.TabIndex = 13;
             // 
             // txtTenSP
             // 
             this.txtTenSP.AutoRoundedCorners = true;
-            this.txtTenSP.BorderRadius = 17;
+            this.txtTenSP.BorderRadius = 25;
             this.txtTenSP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenSP.DefaultText = "";
             this.txtTenSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -323,19 +353,19 @@
             this.txtTenSP.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenSP.Location = new System.Drawing.Point(148, 87);
+            this.txtTenSP.Location = new System.Drawing.Point(164, 107);
             this.txtTenSP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenSP.Name = "txtTenSP";
             this.txtTenSP.PasswordChar = '\0';
             this.txtTenSP.PlaceholderText = "";
             this.txtTenSP.SelectedText = "";
-            this.txtTenSP.Size = new System.Drawing.Size(132, 36);
+            this.txtTenSP.Size = new System.Drawing.Size(234, 52);
             this.txtTenSP.TabIndex = 13;
             // 
             // txtMaSP
             // 
             this.txtMaSP.AutoRoundedCorners = true;
-            this.txtMaSP.BorderRadius = 17;
+            this.txtMaSP.BorderRadius = 25;
             this.txtMaSP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaSP.DefaultText = "";
             this.txtMaSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -346,13 +376,13 @@
             this.txtMaSP.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtMaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaSP.Location = new System.Drawing.Point(148, 28);
+            this.txtMaSP.Location = new System.Drawing.Point(164, 22);
             this.txtMaSP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.PasswordChar = '\0';
             this.txtMaSP.PlaceholderText = "";
             this.txtMaSP.SelectedText = "";
-            this.txtMaSP.Size = new System.Drawing.Size(132, 36);
+            this.txtMaSP.Size = new System.Drawing.Size(164, 52);
             this.txtMaSP.TabIndex = 13;
             // 
             // label1
@@ -360,7 +390,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(31, 28);
+            this.label1.Location = new System.Drawing.Point(34, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 36);
             this.label1.TabIndex = 1;
@@ -372,9 +402,9 @@
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(31, 87);
+            this.label2.Location = new System.Drawing.Point(34, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 36);
+            this.label2.Size = new System.Drawing.Size(111, 42);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên SP";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -384,7 +414,7 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(6, 143);
+            this.label3.Location = new System.Drawing.Point(9, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 36);
             this.label3.TabIndex = 3;
@@ -396,9 +426,9 @@
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(300, 87);
+            this.label5.Location = new System.Drawing.Point(438, 196);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 36);
+            this.label5.Size = new System.Drawing.Size(88, 40);
             this.label5.TabIndex = 5;
             this.label5.Text = "Giá SP";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -408,9 +438,9 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(300, 28);
+            this.label4.Location = new System.Drawing.Point(438, 122);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 36);
+            this.label4.Size = new System.Drawing.Size(88, 37);
             this.label4.TabIndex = 4;
             this.label4.Text = "Số lượng";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -420,7 +450,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(854, 427);
+            this.ClientSize = new System.Drawing.Size(1054, 513);
             this.Controls.Add(this.dtgvQLSP);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -458,5 +488,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtGiaSP;
         private Guna.UI2.WinForms.Guna2TextBox txtTenSP;
         private Guna.UI2.WinForms.Guna2TextBox txtMaSP;
+        private Guna.UI2.WinForms.Guna2ComboBox cboIDNCC;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -11,6 +11,7 @@ namespace DTO
         public string MaSP { get; set; }
         public string TenSP { get; set; }
         public string FK_MaLoai { get; set; }
+        public string FK_IDNCC {  get; set; }
         public int SoLuongTon { get; set; }
         public float GiaBan { get; set; }
     }

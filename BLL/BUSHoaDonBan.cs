@@ -19,6 +19,12 @@ namespace BLL
         {
             return SQLConnect.LoadComboboxPKN(TenBang);
         }
+
+        public static DataTable LoadMaHDN()
+        {
+            return DALHoaDonBan.LoadMaHDN();
+        }
+
         public static void TaoHoaDonBan(DTOHoaDonBan hoaDonBan)
         {
             if (hoaDonBan.IDKH == "")
@@ -56,6 +62,11 @@ namespace BLL
         public static int XetHoaDon(DTOHoaDonBan hoaDonBan)
         {
             return DALHoaDonBan.XetHoaDon(hoaDonBan);
+        }
+
+        public static DataTable InHoaDonBan(DTOHoaDonBan hdb)
+        {
+            return DALHoaDonBan.InHoaDonBan(hdb);
         }
     }
 }

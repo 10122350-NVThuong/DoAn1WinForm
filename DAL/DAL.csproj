@@ -45,6 +45,7 @@
     <Compile Include="DALChiTietHoaDonNhap.cs" />
     <Compile Include="DALDangKy.cs" />
     <Compile Include="DALDanhMucSanPham.cs" />
+    <Compile Include="DALDoanhThu.cs" />
     <Compile Include="DALHoaDonBan.cs" />
     <Compile Include="DALHoaDonNhapHang.cs" />
     <Compile Include="DALKhachHang.cs" />
@@ -53,6 +54,11 @@
     <Compile Include="DALSanPham.cs" />
     <Compile Include="DALTaiKhoan.cs" />
     <Compile Include="DataBase.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +66,19 @@
       <Project>{9d74d38d-42d5-49fb-8078-77dacbb47e6b}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

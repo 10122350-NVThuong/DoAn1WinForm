@@ -45,6 +45,7 @@
     <Compile Include="BUSChiTietHoaDonNhap.cs" />
     <Compile Include="BUSDangKy.cs" />
     <Compile Include="BUSDanhMucSanPham.cs" />
+    <Compile Include="BUSDoanhThu.cs" />
     <Compile Include="BUSHoaDonBan.cs" />
     <Compile Include="BUSHoaDonNhap.cs" />
     <Compile Include="BUSKhachHang.cs" />

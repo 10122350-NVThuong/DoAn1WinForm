@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using BLL;
 using Guna.UI2.WinForms;
 
+
 namespace GUI
 {
     public partial class GUIChiTietHoaDonNhapHang : Form
@@ -68,6 +69,7 @@ namespace GUI
 
             this.Show();
             dtgvChitietHDNhap.DataSource = BUSChiTietHoaDonNhap.DocChiTietHoaDon(chitiet);
+            lblTongTien.Text = BUSChiTietHoaDonNhap.TinhTien(chitiet).ToString("#,##0");
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -75,6 +77,7 @@ namespace GUI
             chitiet.IDHoaDonNhap = GUIHoaDonNhapHang.IDHoaDon;
             chitiet.MaSP = txtMaSP.Text;
             chitiet.SoLuongNhap = Convert.ToInt32(txtSoLuongNhap.Text);
+            chitiet.GiaNhap = Convert.ToDouble(txtGiaCa.Text);
             try
             {
                 DialogResult result = MessageBox.Show("Bạn có muốn cập nhật không?", "Sửa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -83,6 +86,7 @@ namespace GUI
                     BUSChiTietHoaDonNhap.SuaChiTietHoaDon(chitiet);
                     MessageBox.Show($"Cập nhật thông tin thành công cho sản phẩm {chitiet.MaSP} của hóa đơn {chitiet.IDHoaDonNhap}");
                     dtgvChitietHDNhap.DataSource = BUSChiTietHoaDonNhap.DocChiTietHoaDon(chitiet);
+                    lblTongTien.Text = BUSChiTietHoaDonNhap.TinhTien(chitiet).ToString("#,##0");
                 }
                 else
                 {
@@ -107,6 +111,7 @@ namespace GUI
                     BUSChiTietHoaDonNhap.XoaSanPham(chitiet);
                     MessageBox.Show($"Xóa thành công sản phẩm {chitiet.MaSP} của hóa đơn {chitiet.IDHoaDonNhap}");
                     dtgvChitietHDNhap.DataSource = BUSChiTietHoaDonNhap.DocChiTietHoaDon(chitiet);
+                    lblTongTien.Text = BUSChiTietHoaDonNhap.TinhTien(chitiet).ToString("#,##0");
                 }
                 else
                 {

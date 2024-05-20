@@ -23,6 +23,7 @@ namespace GUI
         public static DTOHoaDonBan hoaDonBan = new DTOHoaDonBan();
         private void GUIHoaDonBanHang_Load(object sender, EventArgs e)
         {
+            dtpkNgayBan.Value = DateTime.Now;
             dtgvHDB.DataSource = BUSHoaDonBan.DodulieuPKN("tblHoaDonBan");
             cboIDKH.DataSource = BUSHoaDonBan.LoadComboboxPKN("tblKhachHang");
             cboIDKH.DisplayMember = "TenKhachHang";

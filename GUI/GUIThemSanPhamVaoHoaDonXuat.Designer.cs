@@ -52,7 +52,7 @@
             this.dtgvSanPham.Name = "dtgvSanPham";
             this.dtgvSanPham.RowHeadersWidth = 51;
             this.dtgvSanPham.RowTemplate.Height = 24;
-            this.dtgvSanPham.Size = new System.Drawing.Size(455, 150);
+            this.dtgvSanPham.Size = new System.Drawing.Size(763, 360);
             this.dtgvSanPham.TabIndex = 28;
             this.dtgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvSanPham_CellClick);
             // 
@@ -61,9 +61,9 @@
             this.groupBox1.Controls.Add(this.btnThoat);
             this.groupBox1.Controls.Add(this.btnlm);
             this.groupBox1.Controls.Add(this.btThem);
-            this.groupBox1.Location = new System.Drawing.Point(266, 165);
+            this.groupBox1.Location = new System.Drawing.Point(772, 189);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(192, 174);
+            this.groupBox1.Size = new System.Drawing.Size(257, 174);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng";
@@ -106,7 +106,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.txtSoLuongBan);
             this.groupBox2.Controls.Add(this.txtMaSP);
-            this.groupBox2.Location = new System.Drawing.Point(3, 159);
+            this.groupBox2.Location = new System.Drawing.Point(772, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(261, 180);
             this.groupBox2.TabIndex = 29;
@@ -207,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 347);
+            this.ClientSize = new System.Drawing.Size(1042, 370);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dtgvSanPham);
             this.Controls.Add(this.groupBox1);

@@ -76,5 +76,13 @@ namespace BLL
         {
             return DALSanPham.LoadComboboxPKN(TenBang);
         }
+        public static DataTable ThongKeSanPhamTon()
+        {
+            return DALSanPham.ThongKeSanPhamTon();
+        }
+        public static DataTable ThongKeSanPhamBanChay()
+        {
+            return DALSanPham.ThongKeSPbanchay();
+        }
     }
 }

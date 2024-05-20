@@ -27,6 +27,7 @@ namespace GUI
             sp.MaSP = txtMaSP.Text;
             sp.TenSP = txtTenSP.Text;
             sp.FK_MaLoai = cboMaDanhMuc.SelectedValue.ToString();
+            sp.FK_IDNCC = cboIDNCC.SelectedValue.ToString();
             sp.SoLuongTon = int.Parse(txtSoLuongTon.Text);
             sp.GiaBan = float.Parse(txtGiaSP.Text);
             try
@@ -47,6 +48,10 @@ namespace GUI
             cboMaDanhMuc.DataSource = BUSSanPham.LoadComboboxPKN("tblDanhMucSanPham");
             cboMaDanhMuc.DisplayMember = "TenDanhMuc";
             cboMaDanhMuc.ValueMember = "MaDanhMuc";
+
+            cboIDNCC.DataSource = BUSSanPham.LoadComboboxPKN("tblNCC");
+            cboIDNCC.DisplayMember = "TenNCC";
+            cboIDNCC.ValueMember = "IDNCC";
         }
 
         private void btreset_Click(object sender, EventArgs e)
@@ -92,6 +97,7 @@ namespace GUI
             sp.MaSP = txtMaSP.Text;
             sp.TenSP = txtTenSP.Text;
             sp.FK_MaLoai = cboMaDanhMuc.SelectedValue.ToString();
+            sp.FK_IDNCC = cboIDNCC.SelectedValue.ToString();
             sp.SoLuongTon = int.Parse(txtSoLuongTon.Text);
             sp.GiaBan = float.Parse(txtGiaSP.Text);
             try
@@ -121,8 +127,9 @@ namespace GUI
             txtMaSP.Text = dtgvQLSP[0, hang].Value.ToString();
             txtTenSP.Text = dtgvQLSP[1, hang].Value.ToString();
             cboMaDanhMuc.SelectedValue = dtgvQLSP[2, hang].Value.ToString();
-            txtSoLuongTon.Text = dtgvQLSP[3, hang].Value.ToString();
-            txtGiaSP.Text = dtgvQLSP[4, hang].Value.ToString();
+            cboIDNCC.SelectedValue = dtgvQLSP[3, hang].Value.ToString();
+            txtSoLuongTon.Text = dtgvQLSP[4, hang].Value.ToString();
+            txtGiaSP.Text = dtgvQLSP[5, hang].Value.ToString();
             txtMaSP.Enabled = false;
         }
 

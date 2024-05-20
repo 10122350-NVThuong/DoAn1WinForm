@@ -68,6 +68,7 @@ namespace GUI
 
             this.Show();
             dtgvCTHDB.DataSource = BUSChiTietHoaDonBan.DocChiTietHoaDon(chitiet);
+            lblTongTien.Text = BUSChiTietHoaDonBan.TinhTien(chitiet).ToString("#,##0");
         }
 
         private void btSua_Click(object sender, EventArgs e)
@@ -75,6 +76,8 @@ namespace GUI
             chitiet.IDHoaDonBan = GUIHoaDonBanHang.IDHoaDon;
             chitiet.MaSP = txtMaSP.Text;
             chitiet.SoLuongBan = Convert.ToInt32(txtSoLuongBan.Text);
+            chitiet.GiaBan = Convert.ToDouble(txtGiaBan.Text);
+
             try
             {
                 DialogResult result = MessageBox.Show("Bạn có muốn cập nhật không?", "Sửa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -83,6 +86,7 @@ namespace GUI
                     BUSChiTietHoaDonBan.SuaChiTietHoaDon(chitiet);
                     MessageBox.Show($"Cập nhật thông tin thành công cho sản phẩm {chitiet.MaSP} của hóa đơn {chitiet.IDHoaDonBan}");
                     dtgvCTHDB.DataSource = BUSChiTietHoaDonBan.DocChiTietHoaDon(chitiet);
+                    lblTongTien.Text = BUSChiTietHoaDonBan.TinhTien(chitiet).ToString("#,##0");
                 }
                 else
                 {
@@ -107,6 +111,7 @@ namespace GUI
                     BUSChiTietHoaDonBan.XoaSanPham(chitiet);
                     MessageBox.Show($"Xóa thành công sản phẩm {chitiet.MaSP} của hóa đơn {chitiet.IDHoaDonBan}");
                     dtgvCTHDB.DataSource = BUSChiTietHoaDonBan.DocChiTietHoaDon(chitiet);
+                    lblTongTien.Text = BUSChiTietHoaDonBan.TinhTien(chitiet).ToString("#,##0");
                 }
                 else
                 {

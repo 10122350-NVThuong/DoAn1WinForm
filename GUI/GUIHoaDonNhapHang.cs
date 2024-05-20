@@ -24,6 +24,7 @@ namespace GUI
 
         private void GUIHoaDonNhapHang_Load(object sender, EventArgs e)
         {
+            dtpkNgayNhap.Value = DateTime.Now;
             dtgvHDN.DataSource = BUSHoaDonNhap.DodulieuPKN("tblHoaDonNhap");
             cboIDNCC.DataSource = BUSHoaDonNhap.LoadComboboxPKN("tblNCC");
             cboIDNCC.DisplayMember = "TenNCC";

@@ -61,7 +61,7 @@ namespace GUI
         {
             int hang = e.RowIndex;
             txtMaSP.Text = dtgvSanPham[0, hang].Value.ToString();
-            txtGiaBan.Text = dtgvSanPham[4, hang].Value.ToString();
+            txtGiaBan.Text = dtgvSanPham[5, hang].Value.ToString();
             txtMaSP.Enabled = false;
             txtGiaBan.Enabled = false;
         }
