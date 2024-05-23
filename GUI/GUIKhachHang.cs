@@ -25,6 +25,7 @@ namespace GUI
         private void GUIKhachHang_Load(object sender, EventArgs e)
         {
             dtgvKH.DataSource = BUSKhachHang.DodulieuPKN("tblKhachHang");
+            dtgvKH.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
@@ -140,13 +141,23 @@ namespace GUI
         private void dtgvKH_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtIDKH.Text = dtgvKH[0, hang].Value.ToString();
-            txtTenKhachHang.Text = dtgvKH[1, hang].Value.ToString();
-            txtGioiTinh.Text = dtgvKH[2, hang].Value.ToString();
-            dtpkNgaySinh.Value = (DateTime)dtgvKH[3, hang].Value;
-            txtDiaChi.Text = dtgvKH[4, hang].Value.ToString();
-            txtSDT.Text = dtgvKH[5, hang].Value.ToString();
-            txtIDKH.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvKH[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtIDKH.Text = dtgvKH[0, hang].Value.ToString();
+                    txtTenKhachHang.Text = dtgvKH[1, hang].Value.ToString();
+                    txtGioiTinh.Text = dtgvKH[2, hang].Value.ToString();
+                    dtpkNgaySinh.Value = (DateTime)dtgvKH[3, hang].Value;
+                    txtDiaChi.Text = dtgvKH[4, hang].Value.ToString();
+                    txtSDT.Text = dtgvKH[5, hang].Value.ToString();
+                    txtIDKH.Enabled = false;
+                }
+            }
         }
     }
 }

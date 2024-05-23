@@ -43,11 +43,11 @@
             this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtDiaChi = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtpkNgaySinh = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lbl2 = new System.Windows.Forms.Label();
             this.lbl5 = new System.Windows.Forms.Label();
             this.lbl6 = new System.Windows.Forms.Label();
             this.lbl3 = new System.Windows.Forms.Label();
             this.lbl4 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.dtgvKH = new System.Windows.Forms.DataGridView();
             this.groupBox3.SuspendLayout();
@@ -61,9 +61,9 @@
             this.groupBox3.Controls.Add(this.txtTimKiem);
             this.groupBox3.Controls.Add(this.cboLuaChon);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(802, 3);
+            this.groupBox3.Location = new System.Drawing.Point(884, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(273, 211);
+            this.groupBox3.Size = new System.Drawing.Size(273, 259);
             this.groupBox3.TabIndex = 43;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm khách hàng";
@@ -115,7 +115,7 @@
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnreset);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(875, 220);
+            this.groupBox2.Location = new System.Drawing.Point(957, 268);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 252);
             this.groupBox2.TabIndex = 42;
@@ -191,7 +191,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(1, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(795, 211);
+            this.groupBox1.Size = new System.Drawing.Size(877, 259);
             this.groupBox1.TabIndex = 41;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin khách hàng";
@@ -199,7 +199,7 @@
             // txtIDKH
             // 
             this.txtIDKH.AutoRoundedCorners = true;
-            this.txtIDKH.BorderRadius = 19;
+            this.txtIDKH.BorderRadius = 28;
             this.txtIDKH.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtIDKH.DefaultText = "";
             this.txtIDKH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -210,19 +210,19 @@
             this.txtIDKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIDKH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtIDKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDKH.Location = new System.Drawing.Point(126, 25);
-            this.txtIDKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIDKH.Location = new System.Drawing.Point(122, 25);
+            this.txtIDKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtIDKH.Name = "txtIDKH";
             this.txtIDKH.PasswordChar = '\0';
             this.txtIDKH.PlaceholderText = "";
             this.txtIDKH.SelectedText = "";
-            this.txtIDKH.Size = new System.Drawing.Size(101, 41);
+            this.txtIDKH.Size = new System.Drawing.Size(126, 58);
             this.txtIDKH.TabIndex = 11;
             // 
             // txtGioiTinh
             // 
             this.txtGioiTinh.AutoRoundedCorners = true;
-            this.txtGioiTinh.BorderRadius = 19;
+            this.txtGioiTinh.BorderRadius = 23;
             this.txtGioiTinh.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGioiTinh.DefaultText = "";
             this.txtGioiTinh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -233,19 +233,19 @@
             this.txtGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGioiTinh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtGioiTinh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGioiTinh.Location = new System.Drawing.Point(126, 154);
-            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGioiTinh.Location = new System.Drawing.Point(122, 103);
+            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(4);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.PasswordChar = '\0';
             this.txtGioiTinh.PlaceholderText = "";
             this.txtGioiTinh.SelectedText = "";
-            this.txtGioiTinh.Size = new System.Drawing.Size(101, 41);
+            this.txtGioiTinh.Size = new System.Drawing.Size(101, 49);
             this.txtGioiTinh.TabIndex = 11;
             // 
             // txtTenKhachHang
             // 
             this.txtTenKhachHang.AutoRoundedCorners = true;
-            this.txtTenKhachHang.BorderRadius = 19;
+            this.txtTenKhachHang.BorderRadius = 28;
             this.txtTenKhachHang.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenKhachHang.DefaultText = "";
             this.txtTenKhachHang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -256,19 +256,19 @@
             this.txtTenKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenKhachHang.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtTenKhachHang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenKhachHang.Location = new System.Drawing.Point(126, 90);
-            this.txtTenKhachHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenKhachHang.Location = new System.Drawing.Point(436, 25);
+            this.txtTenKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenKhachHang.Name = "txtTenKhachHang";
             this.txtTenKhachHang.PasswordChar = '\0';
             this.txtTenKhachHang.PlaceholderText = "";
             this.txtTenKhachHang.SelectedText = "";
-            this.txtTenKhachHang.Size = new System.Drawing.Size(240, 41);
+            this.txtTenKhachHang.Size = new System.Drawing.Size(329, 58);
             this.txtTenKhachHang.TabIndex = 11;
             // 
             // txtSDT
             // 
             this.txtSDT.AutoRoundedCorners = true;
-            this.txtSDT.BorderRadius = 19;
+            this.txtSDT.BorderRadius = 23;
             this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSDT.DefaultText = "";
             this.txtSDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -279,19 +279,19 @@
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSDT.Location = new System.Drawing.Point(487, 154);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSDT.Location = new System.Drawing.Point(122, 188);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PasswordChar = '\0';
             this.txtSDT.PlaceholderText = "";
             this.txtSDT.SelectedText = "";
-            this.txtSDT.Size = new System.Drawing.Size(203, 41);
+            this.txtSDT.Size = new System.Drawing.Size(203, 49);
             this.txtSDT.TabIndex = 11;
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.AutoRoundedCorners = true;
-            this.txtDiaChi.BorderRadius = 19;
+            this.txtDiaChi.BorderRadius = 23;
             this.txtDiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDiaChi.DefaultText = "";
             this.txtDiaChi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -302,13 +302,13 @@
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtDiaChi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiaChi.Location = new System.Drawing.Point(381, 25);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiaChi.Location = new System.Drawing.Point(436, 188);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.PasswordChar = '\0';
             this.txtDiaChi.PlaceholderText = "";
             this.txtDiaChi.SelectedText = "";
-            this.txtDiaChi.Size = new System.Drawing.Size(407, 41);
+            this.txtDiaChi.Size = new System.Drawing.Size(407, 49);
             this.txtDiaChi.TabIndex = 11;
             // 
             // dtpkNgaySinh
@@ -319,82 +319,76 @@
             this.dtpkNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpkNgaySinh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dtpkNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpkNgaySinh.Location = new System.Drawing.Point(487, 90);
+            this.dtpkNgaySinh.Location = new System.Drawing.Point(436, 103);
             this.dtpkNgaySinh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpkNgaySinh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpkNgaySinh.Name = "dtpkNgaySinh";
-            this.dtpkNgaySinh.Size = new System.Drawing.Size(147, 41);
+            this.dtpkNgaySinh.Size = new System.Drawing.Size(255, 49);
             this.dtpkNgaySinh.TabIndex = 35;
             this.dtpkNgaySinh.Value = new System.DateTime(2024, 3, 26, 11, 8, 30, 875);
             // 
+            // lbl2
+            // 
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl2.Location = new System.Drawing.Point(340, 25);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(73, 58);
+            this.lbl2.TabIndex = 21;
+            this.lbl2.Text = "Tên KH";
+            this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lbl5
             // 
-            this.lbl5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl5.Location = new System.Drawing.Point(381, 90);
+            this.lbl5.Location = new System.Drawing.Point(330, 103);
             this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(88, 41);
+            this.lbl5.Size = new System.Drawing.Size(88, 49);
             this.lbl5.TabIndex = 34;
             this.lbl5.Text = "Ngày sinh";
             this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl6
             // 
-            this.lbl6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl6.Location = new System.Drawing.Point(411, 154);
+            this.lbl6.Location = new System.Drawing.Point(46, 188);
             this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(58, 41);
+            this.lbl6.Size = new System.Drawing.Size(58, 49);
             this.lbl6.TabIndex = 23;
             this.lbl6.Text = "SĐT";
             this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl3
             // 
-            this.lbl3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl3.Location = new System.Drawing.Point(25, 154);
+            this.lbl3.Location = new System.Drawing.Point(18, 103);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(81, 41);
+            this.lbl3.Size = new System.Drawing.Size(81, 49);
             this.lbl3.TabIndex = 33;
             this.lbl3.Text = "Giới tính";
             this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl4
             // 
-            this.lbl4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl4.Location = new System.Drawing.Point(287, 25);
+            this.lbl4.Location = new System.Drawing.Point(334, 188);
             this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(79, 41);
+            this.lbl4.Size = new System.Drawing.Size(79, 49);
             this.lbl4.TabIndex = 22;
             this.lbl4.Text = "Địa chỉ";
             this.lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl2
-            // 
-            this.lbl2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl2.Location = new System.Drawing.Point(33, 90);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(73, 41);
-            this.lbl2.TabIndex = 21;
-            this.lbl2.Text = "Tên KH";
-            this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lbl1
             // 
-            this.lbl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl1.Location = new System.Drawing.Point(33, 25);
+            this.lbl1.Location = new System.Drawing.Point(29, 25);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(70, 41);
+            this.lbl1.Size = new System.Drawing.Size(70, 58);
             this.lbl1.TabIndex = 20;
             this.lbl1.Text = "Mã KH";
             this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -402,11 +396,11 @@
             // dtgvKH
             // 
             this.dtgvKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvKH.Location = new System.Drawing.Point(1, 220);
+            this.dtgvKH.Location = new System.Drawing.Point(-2, 268);
             this.dtgvKH.Name = "dtgvKH";
             this.dtgvKH.RowHeadersWidth = 51;
             this.dtgvKH.RowTemplate.Height = 24;
-            this.dtgvKH.Size = new System.Drawing.Size(868, 249);
+            this.dtgvKH.Size = new System.Drawing.Size(953, 249);
             this.dtgvKH.TabIndex = 44;
             this.dtgvKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvKH_CellClick);
             // 
@@ -414,7 +408,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1087, 470);
+            this.ClientSize = new System.Drawing.Size(1156, 522);
             this.Controls.Add(this.dtgvKH);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

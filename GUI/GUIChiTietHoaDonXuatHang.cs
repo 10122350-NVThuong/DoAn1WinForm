@@ -46,18 +46,30 @@ namespace GUI
                     c.Enabled = false;
                 }
             }
+            dtgvCTHDB.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void dtgvCTHDB_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtIDHoaDonBan.Text = dtgvCTHDB[0, hang].Value.ToString();
-            txtMaSP.Text = dtgvCTHDB[1, hang].Value.ToString();
-            txtSoLuongBan.Text = dtgvCTHDB[2, hang].Value.ToString();
-            txtGiaBan.Text = dtgvCTHDB[3, hang].Value.ToString();
-            txtIDHoaDonBan.Enabled = false;
-            txtMaSP.Enabled = false;
-            txtGiaBan.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvCTHDB[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtIDHoaDonBan.Text = dtgvCTHDB[0, hang].Value.ToString();
+                    txtMaSP.Text = dtgvCTHDB[1, hang].Value.ToString();
+                    txtSoLuongBan.Text = dtgvCTHDB[2, hang].Value.ToString();
+                    txtGiaBan.Text = dtgvCTHDB[3, hang].Value.ToString();
+                    txtIDHoaDonBan.Enabled = false;
+                    txtMaSP.Enabled = false;
+                    txtGiaBan.Enabled = false;
+                }
+            }
+
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -152,5 +164,6 @@ namespace GUI
                 MessageBox.Show($"Hủy thanh toán hóa đơn {chitiet.IDHoaDonBan} ");
             }
         }
+
     }
 }

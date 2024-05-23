@@ -23,6 +23,7 @@ namespace GUI
         private void GUIDanhMucSanPham_Load(object sender, EventArgs e)
         {
             dtgvDMSP.DataSource = BUSDanhMucSanPham.DodulieuPKN("tblDanhMucSanPham");
+            dtgvDMSP.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         DTODanhMucSanPham danhMucSP = new DTODanhMucSanPham();
 
@@ -45,9 +46,20 @@ namespace GUI
         private void dtgvDMSP_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtMaLoaiSP.Text = dtgvDMSP[0, hang].Value.ToString();
-            txtTenLoaiSP.Text = dtgvDMSP[1, hang].Value.ToString();
-            txtMaLoaiSP.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvDMSP[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtMaLoaiSP.Text = dtgvDMSP[0, hang].Value.ToString();
+                    txtTenLoaiSP.Text = dtgvDMSP[1, hang].Value.ToString();
+                    txtMaLoaiSP.Enabled = false;
+
+                }
+            }
         }
 
         private void btreset_Click(object sender, EventArgs e)

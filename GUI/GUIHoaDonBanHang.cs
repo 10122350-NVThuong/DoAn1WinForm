@@ -33,6 +33,7 @@ namespace GUI
             cboIDNV.ValueMember = "IDNV";
             txtIDHoaDonBan.Enabled = false;
             txtTrangThai.Enabled = false;
+            dtgvHDB.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnTaoHoaDon_Click(object sender, EventArgs e)
@@ -122,13 +123,23 @@ namespace GUI
         private void dtgvHDB_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtIDHoaDonBan.Text = dtgvHDB[0, hang].Value.ToString();
-            IDHoaDon = int.Parse(txtIDHoaDonBan.Text);
-            cboIDKH.SelectedValue = hoaDonBan.IDKH = dtgvHDB[1, hang].Value.ToString();
-            cboIDNV.SelectedValue = hoaDonBan.IDNV = dtgvHDB[2, hang].Value.ToString();
-            dtpkNgayBan.Value = (DateTime)dtgvHDB[3, hang].Value;
-            txtTrangThai.Text = dtgvHDB[4, hang].Value.ToString();
-            txtIDHoaDonBan.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvHDB[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtIDHoaDonBan.Text = dtgvHDB[0, hang].Value.ToString();
+                    IDHoaDon = int.Parse(txtIDHoaDonBan.Text);
+                    cboIDKH.SelectedValue = hoaDonBan.IDKH = dtgvHDB[1, hang].Value.ToString();
+                    cboIDNV.SelectedValue = hoaDonBan.IDNV = dtgvHDB[2, hang].Value.ToString();
+                    dtpkNgayBan.Value = (DateTime)dtgvHDB[3, hang].Value;
+                    txtTrangThai.Text = dtgvHDB[4, hang].Value.ToString();
+                    txtIDHoaDonBan.Enabled = false;
+                }
+            }
         }
 
         private void dtgvHDB_DoubleClick(object sender, EventArgs e)

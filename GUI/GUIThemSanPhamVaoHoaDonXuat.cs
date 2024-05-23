@@ -60,10 +60,20 @@ namespace GUI
         private void dtgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtMaSP.Text = dtgvSanPham[0, hang].Value.ToString();
-            txtGiaBan.Text = dtgvSanPham[5, hang].Value.ToString();
-            txtMaSP.Enabled = false;
-            txtGiaBan.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvSanPham[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtMaSP.Text = dtgvSanPham[0, hang].Value.ToString();
+                    txtGiaBan.Text = dtgvSanPham[5, hang].Value.ToString();
+                    txtMaSP.Enabled = false;
+                    txtGiaBan.Enabled = false;
+                }
+            }
         }
 
         private void GUIThemSanPhamVaoHoaDonXuat_Load(object sender, EventArgs e)

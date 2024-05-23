@@ -22,20 +22,25 @@ namespace GUI
         private void GUIQuanLyNguoiDung_Load(object sender, EventArgs e)
         {
             dtgvND.DataSource = BUSTaiKhoan.DocTaiKhoanNguoiDung();
+            dtgvND.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void dtgvND_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtTenDangNhap.Text = dtgvND[0, hang].Value.ToString();
-            txtMatKhau.Text = dtgvND[1, hang].Value.ToString();
-            txtQuyen.Text = dtgvND[2, hang].Value.ToString();
-            txtTenNhanVien.Text = dtgvND[3, hang].Value.ToString();
-            foreach (Control c in groupBox1.Controls)
+            if (hang >= 0 && e.ColumnIndex >= 0)
             {
-                if(c is Guna2TextBox)
+                if (string.IsNullOrWhiteSpace(dtgvND[e.ColumnIndex, hang].Value?.ToString()))
                 {
-                    c.Enabled = false;
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtTenDangNhap.Text = dtgvND[0, hang].Value.ToString();
+                    txtMatKhau.Text = dtgvND[1, hang].Value.ToString();
+                    txtQuyen.Text = dtgvND[2, hang].Value.ToString();
+                    txtTenNhanVien.Text = dtgvND[3, hang].Value.ToString();
+
                 }
             }
         }

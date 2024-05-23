@@ -124,13 +124,23 @@ namespace GUI
         private void dtgvQLSP_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtMaSP.Text = dtgvQLSP[0, hang].Value.ToString();
-            txtTenSP.Text = dtgvQLSP[1, hang].Value.ToString();
-            cboMaDanhMuc.SelectedValue = dtgvQLSP[2, hang].Value.ToString();
-            cboIDNCC.SelectedValue = dtgvQLSP[3, hang].Value.ToString();
-            txtSoLuongTon.Text = dtgvQLSP[4, hang].Value.ToString();
-            txtGiaSP.Text = dtgvQLSP[5, hang].Value.ToString();
-            txtMaSP.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvQLSP[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtMaSP.Text = dtgvQLSP[0, hang].Value.ToString();
+                    txtTenSP.Text = dtgvQLSP[1, hang].Value.ToString();
+                    cboMaDanhMuc.SelectedValue = dtgvQLSP[2, hang].Value.ToString();
+                    cboIDNCC.SelectedValue = dtgvQLSP[3, hang].Value.ToString();
+                    txtSoLuongTon.Text = dtgvQLSP[4, hang].Value.ToString();
+                    txtGiaSP.Text = dtgvQLSP[5, hang].Value.ToString();
+                    txtMaSP.Enabled = false;
+                }
+            }
         }
 
         private void gtxtTimKiem_TextChanged(object sender, EventArgs e)

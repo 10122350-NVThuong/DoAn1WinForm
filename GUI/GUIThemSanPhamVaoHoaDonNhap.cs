@@ -68,8 +68,19 @@ namespace GUI
         private void dtgvSP_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtMaSP.Text = dtgvSP[0, hang].Value.ToString();
-            txtMaSP.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvSP[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtMaSP.Text = dtgvSP[0, hang].Value.ToString();
+                    txtMaSP.Enabled = false;
+                }
+            }
+
         }
     }
 }

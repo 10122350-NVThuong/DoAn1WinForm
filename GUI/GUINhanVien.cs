@@ -121,14 +121,25 @@ namespace GUI
         private void dtgvnv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtMaNV.Text = dtgvnv[0, hang].Value.ToString();
-            txtTenNV.Text = dtgvnv[1, hang].Value.ToString();
-            txtGioitinh.Text = dtgvnv[2, hang].Value.ToString();
-            datepickNS.Value = (DateTime)dtgvnv[3, hang].Value;
-            txtDiaChi.Text = dtgvnv[4, hang].Value.ToString();
-            txtEmail.Text = dtgvnv[5, hang].Value.ToString();
-            txtSDT.Text = dtgvnv[6, hang].Value.ToString();
-            txtMaNV.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvnv[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtMaNV.Text = dtgvnv[0, hang].Value.ToString();
+                    txtTenNV.Text = dtgvnv[1, hang].Value.ToString();
+                    txtGioitinh.Text = dtgvnv[2, hang].Value.ToString();
+                    datepickNS.Value = (DateTime)dtgvnv[3, hang].Value;
+                    txtDiaChi.Text = dtgvnv[4, hang].Value.ToString();
+                    txtEmail.Text = dtgvnv[5, hang].Value.ToString();
+                    txtSDT.Text = dtgvnv[6, hang].Value.ToString();
+                    txtMaNV.Enabled = false;
+                }
+            }
+
         }
     }
 }

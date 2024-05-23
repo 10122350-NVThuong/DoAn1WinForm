@@ -52,7 +52,7 @@
             this.dtgvSanPham.Name = "dtgvSanPham";
             this.dtgvSanPham.RowHeadersWidth = 51;
             this.dtgvSanPham.RowTemplate.Height = 24;
-            this.dtgvSanPham.Size = new System.Drawing.Size(763, 360);
+            this.dtgvSanPham.Size = new System.Drawing.Size(847, 414);
             this.dtgvSanPham.TabIndex = 28;
             this.dtgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvSanPham_CellClick);
             // 
@@ -61,9 +61,9 @@
             this.groupBox1.Controls.Add(this.btnThoat);
             this.groupBox1.Controls.Add(this.btnlm);
             this.groupBox1.Controls.Add(this.btThem);
-            this.groupBox1.Location = new System.Drawing.Point(772, 189);
+            this.groupBox1.Location = new System.Drawing.Point(856, 243);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(257, 174);
+            this.groupBox1.Size = new System.Drawing.Size(304, 174);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng";
@@ -72,7 +72,7 @@
             // 
             this.btnThoat.Location = new System.Drawing.Point(26, 124);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(145, 37);
+            this.btnThoat.Size = new System.Drawing.Size(208, 37);
             this.btnThoat.TabIndex = 22;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -82,7 +82,7 @@
             // 
             this.btnlm.Location = new System.Drawing.Point(26, 68);
             this.btnlm.Name = "btnlm";
-            this.btnlm.Size = new System.Drawing.Size(145, 41);
+            this.btnlm.Size = new System.Drawing.Size(208, 41);
             this.btnlm.TabIndex = 1;
             this.btnlm.Text = "Làm mới";
             this.btnlm.UseVisualStyleBackColor = true;
@@ -92,7 +92,7 @@
             // 
             this.btThem.Location = new System.Drawing.Point(26, 21);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(145, 33);
+            this.btThem.Size = new System.Drawing.Size(208, 33);
             this.btThem.TabIndex = 0;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
@@ -106,19 +106,18 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.txtSoLuongBan);
             this.groupBox2.Controls.Add(this.txtMaSP);
-            this.groupBox2.Location = new System.Drawing.Point(772, 3);
+            this.groupBox2.Location = new System.Drawing.Point(856, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(261, 180);
+            this.groupBox2.Size = new System.Drawing.Size(304, 234);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sản phẩm";
             // 
             // label1
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Location = new System.Drawing.Point(6, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 33);
+            this.label1.Size = new System.Drawing.Size(93, 46);
             this.label1.TabIndex = 11;
             this.label1.Text = "Mã Sản Phẩm";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -134,31 +133,29 @@
             this.txtGiaBan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGiaBan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtGiaBan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGiaBan.Location = new System.Drawing.Point(114, 132);
+            this.txtGiaBan.Location = new System.Drawing.Point(114, 173);
             this.txtGiaBan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtGiaBan.Name = "txtGiaBan";
             this.txtGiaBan.PasswordChar = '\0';
             this.txtGiaBan.PlaceholderText = "";
             this.txtGiaBan.SelectedText = "";
-            this.txtGiaBan.Size = new System.Drawing.Size(143, 32);
+            this.txtGiaBan.Size = new System.Drawing.Size(170, 43);
             this.txtGiaBan.TabIndex = 23;
             // 
             // label2
             // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(20, 78);
+            this.label2.Location = new System.Drawing.Point(20, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 33);
+            this.label2.Size = new System.Drawing.Size(79, 44);
             this.label2.TabIndex = 12;
             this.label2.Text = "Số lượng";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(20, 132);
+            this.label3.Location = new System.Drawing.Point(20, 172);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 33);
+            this.label3.Size = new System.Drawing.Size(79, 44);
             this.label3.TabIndex = 15;
             this.label3.Text = "Giá cả";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -174,13 +171,13 @@
             this.txtSoLuongBan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoLuongBan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSoLuongBan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoLuongBan.Location = new System.Drawing.Point(114, 78);
+            this.txtSoLuongBan.Location = new System.Drawing.Point(114, 99);
             this.txtSoLuongBan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSoLuongBan.Name = "txtSoLuongBan";
             this.txtSoLuongBan.PasswordChar = '\0';
             this.txtSoLuongBan.PlaceholderText = "";
             this.txtSoLuongBan.SelectedText = "";
-            this.txtSoLuongBan.Size = new System.Drawing.Size(143, 32);
+            this.txtSoLuongBan.Size = new System.Drawing.Size(170, 44);
             this.txtSoLuongBan.TabIndex = 22;
             // 
             // txtMaSP
@@ -200,14 +197,14 @@
             this.txtMaSP.PasswordChar = '\0';
             this.txtMaSP.PlaceholderText = "";
             this.txtMaSP.SelectedText = "";
-            this.txtMaSP.Size = new System.Drawing.Size(143, 33);
+            this.txtMaSP.Size = new System.Drawing.Size(170, 46);
             this.txtMaSP.TabIndex = 21;
             // 
             // GUIThemSanPhamVaoHoaDonXuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 370);
+            this.ClientSize = new System.Drawing.Size(1160, 420);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dtgvSanPham);
             this.Controls.Add(this.groupBox1);

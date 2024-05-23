@@ -34,6 +34,7 @@ namespace GUI
             cboIDNV.ValueMember = "IDNV";
             txtIDHoaDonNhap.Enabled = false;
             txtTrangThai.Enabled = false;
+            dtgvHDN.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnTaoHoaDon_Click(object sender, EventArgs e)
@@ -123,19 +124,29 @@ namespace GUI
         private void dtgvHDN_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtIDHoaDonNhap.Text = dtgvHDN[0, hang].Value.ToString();
-            IDHoaDon = int.Parse(txtIDHoaDonNhap.Text);
-            cboIDNCC.SelectedValue = hoaDonNhapHang.IDNCC = dtgvHDN[1, hang].Value.ToString();
-            cboIDNV.SelectedValue = hoaDonNhapHang.IDNV = dtgvHDN[2, hang].Value.ToString();
-            dtpkNgayNhap.Value = (DateTime)dtgvHDN[3, hang].Value;
-            txtTrangThai.Text = dtgvHDN[4, hang].Value.ToString();
-            txtIDHoaDonNhap.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvHDN[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtIDHoaDonNhap.Text = dtgvHDN[0, hang].Value.ToString();
+                    IDHoaDon = int.Parse(txtIDHoaDonNhap.Text);
+                    cboIDNCC.SelectedValue = hoaDonNhapHang.IDNCC = dtgvHDN[1, hang].Value.ToString();
+                    cboIDNV.SelectedValue = hoaDonNhapHang.IDNV = dtgvHDN[2, hang].Value.ToString();
+                    dtpkNgayNhap.Value = (DateTime)dtgvHDN[3, hang].Value;
+                    txtTrangThai.Text = dtgvHDN[4, hang].Value.ToString();
+                    txtIDHoaDonNhap.Enabled = false;
+                }
+            }
         }
 
         private void dtgvHDN_DoubleClick(object sender, EventArgs e)
         {
             hoaDonNhapHang.IDHoaDonNhap = int.Parse(txtIDHoaDonNhap.Text);
-            if(BUSHoaDonNhap.XetHoaDon(hoaDonNhapHang) == 0 )
+            if (BUSHoaDonNhap.XetHoaDon(hoaDonNhapHang) == 0)
             {
                 GUIThemSanPhamVaoHoaDonNhap themsanpham = new GUIThemSanPhamVaoHoaDonNhap();
                 this.Hide();

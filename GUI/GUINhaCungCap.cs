@@ -26,17 +26,28 @@ namespace GUI
         private void dtgvNCC_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtIDNCC.Text = dtgvNCC[0, hang].Value.ToString();
-            txtTenNhaCungCap.Text = dtgvNCC[1, hang].Value.ToString();
-            txtDiaChi.Text = dtgvNCC[2, hang].Value.ToString();
-            txtSDT.Text = dtgvNCC[3, hang].Value.ToString();
-            txtEmail.Text = dtgvNCC[4, hang].Value.ToString();
-            txtIDNCC.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvNCC[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtIDNCC.Text = dtgvNCC[0, hang].Value.ToString();
+                    txtTenNhaCungCap.Text = dtgvNCC[1, hang].Value.ToString();
+                    txtDiaChi.Text = dtgvNCC[2, hang].Value.ToString();
+                    txtSDT.Text = dtgvNCC[3, hang].Value.ToString();
+                    txtEmail.Text = dtgvNCC[4, hang].Value.ToString();
+                    txtIDNCC.Enabled = false;
+                }
+            }
         }
 
         private void GUINhaCungCap_Load(object sender, EventArgs e)
         {
             dtgvNCC.DataSource = BUSNhaCungCap.DodulieuPKN("tblNCC");
+            dtgvNCC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnThem_Click(object sender, EventArgs e)

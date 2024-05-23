@@ -71,7 +71,7 @@
             this.txtTenNhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTenNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenNhanVien.Location = new System.Drawing.Point(445, 117);
+            this.txtTenNhanVien.Location = new System.Drawing.Point(487, 117);
             this.txtTenNhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenNhanVien.Name = "txtTenNhanVien";
             this.txtTenNhanVien.PasswordChar = '\0';
@@ -91,7 +91,7 @@
             this.txtMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatKhau.Location = new System.Drawing.Point(90, 117);
+            this.txtMatKhau.Location = new System.Drawing.Point(146, 117);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '\0';
@@ -111,7 +111,7 @@
             this.txtQuyen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuyen.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtQuyen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQuyen.Location = new System.Drawing.Point(445, 31);
+            this.txtQuyen.Location = new System.Drawing.Point(487, 31);
             this.txtQuyen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtQuyen.Name = "txtQuyen";
             this.txtQuyen.PasswordChar = '\0';
@@ -131,7 +131,7 @@
             this.txtTenDangNhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTenDangNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(93, 31);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(149, 31);
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.PasswordChar = '\0';
@@ -142,19 +142,17 @@
             // 
             // label2
             // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Location = new System.Drawing.Point(11, 117);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 46);
+            this.label2.Size = new System.Drawing.Size(131, 46);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Password";
+            this.label2.Text = "Mật khẩu";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(310, 117);
+            this.label4.Location = new System.Drawing.Point(352, 117);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 46);
@@ -164,19 +162,17 @@
             // 
             // label1
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Location = new System.Drawing.Point(8, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 46);
+            this.label1.Size = new System.Drawing.Size(134, 46);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Username";
+            this.label1.Text = "Tên đang nhập";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(336, 31);
+            this.label3.Location = new System.Drawing.Point(378, 31);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 46);

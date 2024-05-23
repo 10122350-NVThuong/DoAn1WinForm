@@ -47,7 +47,6 @@
             // 
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
             this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(530, 556);
@@ -56,7 +55,6 @@
             // guna2Panel2
             // 
             this.guna2Panel2.Controls.Add(this.guna2GroupBox1);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel2.Location = new System.Drawing.Point(532, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(544, 556);
@@ -99,7 +97,7 @@
             // 
             this.llbforgotpass.Location = new System.Drawing.Point(264, 415);
             this.llbforgotpass.Name = "llbforgotpass";
-            this.llbforgotpass.Size = new System.Drawing.Size(172, 46);
+            this.llbforgotpass.Size = new System.Drawing.Size(172, 58);
             this.llbforgotpass.TabIndex = 8;
             this.llbforgotpass.TabStop = true;
             this.llbforgotpass.Text = "Quên mật khẩu";
@@ -109,7 +107,7 @@
             // btnChangePass
             // 
             this.btnChangePass.AutoRoundedCorners = true;
-            this.btnChangePass.BorderRadius = 22;
+            this.btnChangePass.BorderRadius = 28;
             this.btnChangePass.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.btnChangePass.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnChangePass.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -119,7 +117,7 @@
             this.btnChangePass.ForeColor = System.Drawing.Color.Black;
             this.btnChangePass.Location = new System.Drawing.Point(34, 415);
             this.btnChangePass.Name = "btnChangePass";
-            this.btnChangePass.Size = new System.Drawing.Size(192, 46);
+            this.btnChangePass.Size = new System.Drawing.Size(192, 58);
             this.btnChangePass.TabIndex = 7;
             this.btnChangePass.Text = "Đổi mật khẩu";
             this.btnChangePass.Click += new System.EventHandler(this.btnChangePass_Click);
@@ -200,16 +198,16 @@
             // btnLogin
             // 
             this.btnLogin.AutoRoundedCorners = true;
-            this.btnLogin.BorderRadius = 28;
+            this.btnLogin.BorderRadius = 31;
             this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Location = new System.Drawing.Point(82, 327);
+            this.btnLogin.Location = new System.Drawing.Point(82, 320);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(332, 58);
+            this.btnLogin.Size = new System.Drawing.Size(332, 65);
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);

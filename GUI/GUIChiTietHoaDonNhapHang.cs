@@ -33,6 +33,7 @@ namespace GUI
 
             lblTongTien.Text = BUSChiTietHoaDonNhap.TinhTien(chitiet).ToString("#,##0");
             dtgvChitietHDNhap.DataSource = BUSChiTietHoaDonNhap.DocChiTietHoaDon(chitiet);
+            dtgvChitietHDNhap.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             foreach (Control c in groupBox1.Controls)
             {
                 if (c is Guna2TextBox)
@@ -52,13 +53,25 @@ namespace GUI
         private void dtgvChitietHDNhap_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            txtIDHoaDonNhap.Text = dtgvChitietHDNhap[0, hang].Value.ToString();
-            txtMaSP.Text = dtgvChitietHDNhap[1, hang].Value.ToString();
-            txtSoLuongNhap.Text = dtgvChitietHDNhap[2, hang].Value.ToString();
-            txtGiaCa.Text = dtgvChitietHDNhap[3, hang].Value.ToString();
-            txtIDHoaDonNhap.Enabled = false;
-            txtMaSP.Enabled = false;
-            txtGiaCa.Enabled = false;
+            if (hang >= 0 && e.ColumnIndex >= 0)
+            {
+                if (string.IsNullOrWhiteSpace(dtgvChitietHDNhap[e.ColumnIndex, hang].Value?.ToString()))
+                {
+                    MessageBox.Show("Không có dữ liệu");
+                }
+                else
+                {
+                    txtIDHoaDonNhap.Text = dtgvChitietHDNhap[0, hang].Value.ToString();
+                    txtMaSP.Text = dtgvChitietHDNhap[1, hang].Value.ToString();
+                    txtSoLuongNhap.Text = dtgvChitietHDNhap[2, hang].Value.ToString();
+                    txtGiaCa.Text = dtgvChitietHDNhap[3, hang].Value.ToString();
+                    txtIDHoaDonNhap.Enabled = false;
+                    txtMaSP.Enabled = false;
+                    txtGiaCa.Enabled = false;
+                }
+            }
+
+
         }
 
         private void btnThem_Click(object sender, EventArgs e)
