@@ -94,21 +94,28 @@ namespace GUI
         public static int IDHoaDon;
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
-            if (cboLuaChon.SelectedItem.ToString() == "Mã Hóa Đơn")
+            if (cboLuaChon.SelectedItem != null)
             {
-                dtgvHDB.DataSource = BUSHoaDonBan.TimKiem("tblHoaDonBan", "IDHoaDonBan", txtTimKiem.Text);
+                if (cboLuaChon.SelectedItem.ToString() == "Mã Hóa Đơn")
+                {
+                    dtgvHDB.DataSource = BUSHoaDonBan.TimKiem("tblHoaDonBan", "IDHoaDonBan", txtTimKiem.Text);
+                }
+                else if (cboLuaChon.SelectedItem.ToString() == "Mã Khách Hàng")
+                {
+                    dtgvHDB.DataSource = BUSHoaDonBan.TimKiem("tblHoaDonBan", "IDKH", txtTimKiem.Text);
+                }
+                else if (cboLuaChon.SelectedItem.ToString() == "Mã Nhân Viên")
+                {
+                    dtgvHDB.DataSource = BUSHoaDonBan.TimKiem("tblHoaDonBan", "IDNV", txtTimKiem.Text);
+                }
+                else if (cboLuaChon.SelectedItem.ToString() == "Trạng Thái")
+                {
+                    dtgvHDB.DataSource = BUSHoaDonBan.TimKiem("tblHoaDonBan", "TrangThai", txtTimKiem.Text);
+                }
             }
-            else if (cboLuaChon.SelectedItem.ToString() == "Mã Khách Hàng")
+            else
             {
-                dtgvHDB.DataSource = BUSHoaDonBan.TimKiem("tblHoaDonBan", "IDKH", txtTimKiem.Text);
-            }
-            else if (cboLuaChon.SelectedItem.ToString() == "Mã Nhân Viên")
-            {
-                dtgvHDB.DataSource = BUSHoaDonBan.TimKiem("tblHoaDonBan", "IDNV", txtTimKiem.Text);
-            }
-            else if (cboLuaChon.SelectedItem.ToString() == "Trạng Thái")
-            {
-                dtgvHDB.DataSource = BUSHoaDonBan.TimKiem("tblHoaDonBan", "TrangThai", txtTimKiem.Text);
+                MessageBox.Show("Vui lòng chọn 1 tiêu chí tìm kiếm ở trên");
             }
         }
 

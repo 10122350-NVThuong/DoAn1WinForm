@@ -21,23 +21,30 @@ namespace GUI
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            // Kiểm tra và phân tích tháng nếu được cung cấp
-            if (!string.IsNullOrWhiteSpace(txtThang.Text) && int.TryParse(txtThang.Text, out int parsedThang))
+            try
             {
-                thang = parsedThang;
-            }
+                // Kiểm tra và phân tích tháng nếu được cung cấp
+                if (!string.IsNullOrWhiteSpace(txtThang.Text) && int.TryParse(txtThang.Text, out int parsedThang))
+                {
+                    thang = parsedThang;
+                }
 
-            // Kiểm tra và phân tích năm nếu được cung cấp
-            if (!string.IsNullOrWhiteSpace(txtNam.Text) && int.TryParse(txtNam.Text, out int parsedNam))
+                // Kiểm tra và phân tích năm nếu được cung cấp
+                if (!string.IsNullOrWhiteSpace(txtNam.Text) && int.TryParse(txtNam.Text, out int parsedNam))
+                {
+                    nam = parsedNam;
+                }
+
+                rptThongKeDoanhThu report = new rptThongKeDoanhThu();
+                report.SetDataSource(BUSDoanhThu.ThongKeDoanhThu(thang, nam));
+                GUIFrmBaoCao frm = new GUIFrmBaoCao();
+                frm.CRreport.ReportSource = report;
+                frm.ShowDialog();
+            }
+            catch(Exception ex)
             {
-                nam = parsedNam;
+                MessageBox.Show(ex.Message, "Sai thong tin", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            rptThongKeDoanhThu report = new rptThongKeDoanhThu();
-            report.SetDataSource(BUSDoanhThu.ThongKeDoanhThu(thang, nam));
-            GUIFrmBaoCao frm = new GUIFrmBaoCao();
-            frm.CRreport.ReportSource = report;
-            frm.ShowDialog();
 
         }
     }

@@ -29,18 +29,25 @@ namespace GUI
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
-            if (cboLuaChon.SelectedItem.ToString() == "Mã khách hàng")
+            if (cboLuaChon.SelectedItem != null)
             {
-                dtgvKH.DataSource = BUSKhachHang.TimKiem("tblKhachHang", "IDKH", txtTimKiem.Text);
-            }
-            else if (cboLuaChon.SelectedItem.ToString() == "Tên khách hàng")
-            {
-                dtgvKH.DataSource = BUSKhachHang.TimKiem("tblKhachHang", "TenKhachHang", txtTimKiem.Text);
+                if (cboLuaChon.SelectedItem.ToString() == "Mã khách hàng")
+                {
+                    dtgvKH.DataSource = BUSKhachHang.TimKiem("tblKhachHang", "IDKH", txtTimKiem.Text);
+                }
+                else if (cboLuaChon.SelectedItem.ToString() == "Tên khách hàng")
+                {
+                    dtgvKH.DataSource = BUSKhachHang.TimKiem("tblKhachHang", "TenKhachHang", txtTimKiem.Text);
 
+                }
+                else if (cboLuaChon.SelectedItem.ToString() == "Giới tính")
+                {
+                    dtgvKH.DataSource = BUSKhachHang.TimKiem("tblKhachHang", "GioiTinh", txtTimKiem.Text);
+                }
             }
-            else if (cboLuaChon.SelectedItem.ToString() == "Giới tính")
+            else
             {
-                dtgvKH.DataSource = BUSKhachHang.TimKiem("tblKhachHang", "GioiTinh", txtTimKiem.Text);
+                MessageBox.Show("Vui lòng chọn 1 tiêu chí tìm kiếm ở trên");
             }
         }
 

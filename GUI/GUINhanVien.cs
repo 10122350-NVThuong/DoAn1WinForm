@@ -96,23 +96,26 @@ namespace GUI
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
-            if (cboLuaChon.SelectedItem.ToString() == "Mã nhân viên")
+            if (cboLuaChon.SelectedItem != null)
             {
-                dtgvnv.DataSource = BUSNhanVien.TimKiemNhanVien("tblNhanVien", "IDNV", txtTimKiem.Text);
-            }
-            else if (cboLuaChon.SelectedItem.ToString() == "Tên nhân viên")
-            {
-                dtgvnv.DataSource = BUSNhanVien.TimKiemNhanVien("tblNhanVien", "TenNhanVien", txtTimKiem.Text);
+                if (cboLuaChon.SelectedItem.ToString() == "Mã nhân viên")
+                {
+                    dtgvnv.DataSource = BUSNhanVien.TimKiemNhanVien("tblNhanVien", "IDNV", txtTimKiem.Text);
+                }
+                else if (cboLuaChon.SelectedItem.ToString() == "Tên nhân viên")
+                {
+                    dtgvnv.DataSource = BUSNhanVien.TimKiemNhanVien("tblNhanVien", "TenNhanVien", txtTimKiem.Text);
 
+                }
+                else if (cboLuaChon.SelectedItem.ToString() == "Giới tính")
+                {
+                    dtgvnv.DataSource = BUSNhanVien.TimKiemNhanVien("tblNhanVien", "GioitinhNV", txtTimKiem.Text);
+                }
             }
-            else if (cboLuaChon.SelectedItem.ToString() == "Giới tính")
+            else
             {
-                dtgvnv.DataSource = BUSNhanVien.TimKiemNhanVien("tblNhanVien", "GioitinhNV", txtTimKiem.Text);
+                MessageBox.Show("Vui lòng chọn 1 tiêu chí tìm kiếm ở trên");
             }
-            //else if (cboLuaChon.SelectedItem.ToString() == "Địa chỉ")
-            //{
-            //    dtgvnv.DataSource = BUSNhanVien.TimKiemNhanVien("tblNhanVien", "DiachiNV", txtTimKiem.Text);
-            //}
         }
 
         private void dtgvnv_CellClick(object sender, DataGridViewCellEventArgs e)

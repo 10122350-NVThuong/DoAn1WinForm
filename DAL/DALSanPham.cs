@@ -49,7 +49,7 @@ namespace DAL
 
         public static DataTable ThongKeSanPhamTon()
         {
-            string truyvan = "select MaSP, TenSP, TenDanhMuc, SoLuongTon, CASE WHEN SoLuongTon > 0 THEN N'Còn Hàng' ELSE N'Hết Hàng' END AS TinhTrang from tblMatHang mh inner join tblDanhMucSanPham dm on mh.MaDanhMuc = dm.MaDanhMuc";
+            string truyvan = "select MaSP, TenSP, TenDanhMuc, SoLuongTon, CASE WHEN SoLuongTon > 0 THEN N'Còn Hàng' ELSE N'Hết Hàng' END AS TinhTrang from tblMatHang mh inner join tblDanhMucSanPham dm on mh.MaDanhMuc = dm.MaDanhMuc order by SoLuongTon desc";
             return SQLConnect.DocChiTietHoaDon(truyvan);
         }
         public static DataTable ThongKeSPbanchay()

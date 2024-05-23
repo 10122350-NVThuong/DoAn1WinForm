@@ -38,7 +38,7 @@ namespace GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -87,7 +87,7 @@ namespace GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -117,7 +117,7 @@ namespace GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -135,19 +135,26 @@ namespace GUI
 
         private void gtxtTimKiem_TextChanged(object sender, EventArgs e)
         {
-            if (cbluachontimkiem.SelectedItem.ToString() == "Mã sản phẩm")
+            if (cbluachontimkiem.SelectedItem != null)
             {
-                dtgvQLSP.DataSource = BUSSanPham.TimKiem("tblMatHang", "MaSP", gtxtTimKiem.Text);
-            }
-            else if (cbluachontimkiem.SelectedItem.ToString() == "Tên sản phẩm")
-            {
-                dtgvQLSP.DataSource = BUSSanPham.TimKiem("tblMatHang", "TenSP", gtxtTimKiem.Text);
+                if (cbluachontimkiem.SelectedItem.ToString() == "Mã sản phẩm")
+                {
+                    dtgvQLSP.DataSource = BUSSanPham.TimKiem("tblMatHang", "MaSP", gtxtTimKiem.Text);
+                }
+                else if (cbluachontimkiem.SelectedItem.ToString() == "Tên sản phẩm")
+                {
+                    dtgvQLSP.DataSource = BUSSanPham.TimKiem("tblMatHang", "TenSP", gtxtTimKiem.Text);
 
-            }
-            else if (cbluachontimkiem.SelectedItem.ToString() == "Mã danh mục")
-            {
-                dtgvQLSP.DataSource = BUSSanPham.TimKiem("tblMatHang", "MaDanhMuc", gtxtTimKiem.Text);
+                }
+                else if (cbluachontimkiem.SelectedItem.ToString() == "Mã danh mục")
+                {
+                    dtgvQLSP.DataSource = BUSSanPham.TimKiem("tblMatHang", "MaDanhMuc", gtxtTimKiem.Text);
 
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn 1 tiêu chí tìm kiếm ở trên");
             }
         }
     }

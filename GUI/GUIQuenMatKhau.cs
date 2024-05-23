@@ -41,7 +41,7 @@ namespace GUI
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -53,7 +53,7 @@ namespace GUI
             {
                 if (txtXacNhanMatKhau.Text != tk.MatKhau)
                 {
-                    MessageBox.Show("Mật khẩu chưa trùng khớp");
+                    MessageBox.Show("Mật khẩu chưa trùng khớp", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -70,7 +70,7 @@ namespace GUI
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -80,7 +80,7 @@ namespace GUI
             {
                 if (code != int.Parse(txtCode.Text))
                 {
-                    MessageBox.Show("Mã xác nhận chưa chính xác");
+                    MessageBox.Show("Mã xác nhận chưa chính xác", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     label4.Enabled = false;
                     label5.Enabled = false;
                     txtMatKhau.Enabled = false;

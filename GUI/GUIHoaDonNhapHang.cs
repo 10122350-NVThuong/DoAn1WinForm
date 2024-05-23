@@ -95,21 +95,28 @@ namespace GUI
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
-            if (cboLuaChon.SelectedItem.ToString() == "Mã Hóa Đơn")
+            if (cboLuaChon.SelectedItem != null)
             {
-                dtgvHDN.DataSource = BUSHoaDonNhap.TimKiem("tblHoaDonNhap", "IDHoaDonNhap", txtTimKiem.Text);
+                if (cboLuaChon.SelectedItem.ToString() == "Mã Hóa Đơn")
+                {
+                    dtgvHDN.DataSource = BUSHoaDonNhap.TimKiem("tblHoaDonNhap", "IDHoaDonNhap", txtTimKiem.Text);
+                }
+                else if (cboLuaChon.SelectedItem.ToString() == "Mã Nhà Cung Cấp")
+                {
+                    dtgvHDN.DataSource = BUSHoaDonNhap.TimKiem("tblHoaDonNhap", "IDNCC", txtTimKiem.Text);
+                }
+                else if (cboLuaChon.SelectedItem.ToString() == "Mã Nhân Viên")
+                {
+                    dtgvHDN.DataSource = BUSHoaDonNhap.TimKiem("tblHoaDonNhap", "IDNV", txtTimKiem.Text);
+                }
+                else if (cboLuaChon.SelectedItem.ToString() == "Trạng Thái")
+                {
+                    dtgvHDN.DataSource = BUSHoaDonNhap.TimKiem("tblHoaDonNhap", "TrangThai", txtTimKiem.Text);
+                }
             }
-            else if (cboLuaChon.SelectedItem.ToString() == "Mã Nhà Cung Cấp")
+            else
             {
-                dtgvHDN.DataSource = BUSHoaDonNhap.TimKiem("tblHoaDonNhap", "IDNCC", txtTimKiem.Text);
-            }
-            else if (cboLuaChon.SelectedItem.ToString() == "Mã Nhân Viên")
-            {
-                dtgvHDN.DataSource = BUSHoaDonNhap.TimKiem("tblHoaDonNhap", "IDNV", txtTimKiem.Text);
-            }
-            else if (cboLuaChon.SelectedItem.ToString() == "Trạng Thái")
-            {
-                dtgvHDN.DataSource = BUSHoaDonNhap.TimKiem("tblHoaDonNhap", "TrangThai", txtTimKiem.Text);
+                MessageBox.Show("Vui lòng chọn 1 tiêu chí tìm kiếm ở trên");
             }
         }
         public static int IDHoaDon;

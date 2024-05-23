@@ -62,9 +62,7 @@
             this.SanPhamTonKhoTollStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.ThongKeSPbanchayToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.InAnToolStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.inHóaĐơnNhậpHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inHóaĐơnXuấtHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sửaChữaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HelpToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +79,7 @@
             this.hóaĐơnToolStripMenuItem,
             this.tìmKiếmToolStripMenuItem,
             this.BCTKToolStrip,
-            this.sửaChữaToolStripMenuItem});
+            this.HelpToolStrip});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(14, 3, 0, 3);
@@ -314,8 +312,8 @@
             // SanPhamTonKhoTollStrip
             // 
             this.SanPhamTonKhoTollStrip.Name = "SanPhamTonKhoTollStrip";
-            this.SanPhamTonKhoTollStrip.Size = new System.Drawing.Size(351, 32);
-            this.SanPhamTonKhoTollStrip.Text = "Thống kê sản phẩm tồn kho";
+            this.SanPhamTonKhoTollStrip.Size = new System.Drawing.Size(409, 32);
+            this.SanPhamTonKhoTollStrip.Text = "Thống kê sản phẩm trong kho hàng";
             this.SanPhamTonKhoTollStrip.Click += new System.EventHandler(this.SanPhamTonKhoTollStrip_Click);
             // 
             // ThongKeSPbanchayToolStrip
@@ -327,32 +325,18 @@
             // 
             // InAnToolStrip
             // 
-            this.InAnToolStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inHóaĐơnNhậpHàngToolStripMenuItem,
-            this.inHóaĐơnXuấtHàngToolStripMenuItem});
             this.InAnToolStrip.Name = "InAnToolStrip";
             this.InAnToolStrip.Size = new System.Drawing.Size(224, 32);
             this.InAnToolStrip.Text = "&In ấn";
             this.InAnToolStrip.Click += new System.EventHandler(this.InAnToolStrip_Click);
             // 
-            // inHóaĐơnNhậpHàngToolStripMenuItem
+            // HelpToolStrip
             // 
-            this.inHóaĐơnNhậpHàngToolStripMenuItem.Name = "inHóaĐơnNhậpHàngToolStripMenuItem";
-            this.inHóaĐơnNhậpHàngToolStripMenuItem.Size = new System.Drawing.Size(290, 32);
-            this.inHóaĐơnNhậpHàngToolStripMenuItem.Text = "In hóa đơn nhập hàng";
-            // 
-            // inHóaĐơnXuấtHàngToolStripMenuItem
-            // 
-            this.inHóaĐơnXuấtHàngToolStripMenuItem.Name = "inHóaĐơnXuấtHàngToolStripMenuItem";
-            this.inHóaĐơnXuấtHàngToolStripMenuItem.Size = new System.Drawing.Size(290, 32);
-            this.inHóaĐơnXuấtHàngToolStripMenuItem.Text = "In hóa đơn xuất hàng";
-            // 
-            // sửaChữaToolStripMenuItem
-            // 
-            this.sửaChữaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sửaChữaToolStripMenuItem.Image")));
-            this.sửaChữaToolStripMenuItem.Name = "sửaChữaToolStripMenuItem";
-            this.sửaChữaToolStripMenuItem.Size = new System.Drawing.Size(208, 58);
-            this.sửaChữaToolStripMenuItem.Text = "Hỗ trợ khách hàng";
+            this.HelpToolStrip.Image = ((System.Drawing.Image)(resources.GetObject("HelpToolStrip.Image")));
+            this.HelpToolStrip.Name = "HelpToolStrip";
+            this.HelpToolStrip.Size = new System.Drawing.Size(208, 58);
+            this.HelpToolStrip.Text = "Hỗ trợ khách hàng";
+            this.HelpToolStrip.Click += new System.EventHandler(this.HelpToolStrip_Click);
             // 
             // GUIHeThong
             // 
@@ -403,9 +387,7 @@
         private System.Windows.Forms.ToolStripMenuItem SanPhamTonKhoTollStrip;
         private System.Windows.Forms.ToolStripMenuItem ThongKeSPbanchayToolStrip;
         private System.Windows.Forms.ToolStripMenuItem InAnToolStrip;
-        private System.Windows.Forms.ToolStripMenuItem inHóaĐơnNhậpHàngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inHóaĐơnXuấtHàngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sửaChữaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem HelpToolStrip;
         private System.Windows.Forms.ToolStripMenuItem QLTTSPToolStrip;
         private System.Windows.Forms.ToolStripMenuItem QLDMSPToolStrip;
         private System.Windows.Forms.ToolStripMenuItem ThoatToolStrip;

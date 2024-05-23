@@ -62,11 +62,11 @@ namespace GUI
                 }
                 else if (i == 2)
                 {
-                    MessageBox.Show("Sai mật khẩu!");
+                    MessageBox.Show("Sai mật khẩu!", "Sai mật khẩu", MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
                 else
                 {
-                    MessageBox.Show("Tài khoản không tồn tại!");
+                    MessageBox.Show("Tài khoản chưa tồn tại", "Tài khoản chưa chính xác", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)

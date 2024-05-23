@@ -208,5 +208,10 @@ namespace GUI
 
             this.Show();
         }
+
+        private void HelpToolStrip_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Khi cần giúp đỡ hãy gọi điện đến số điện thoại: 0366424014\nhoặc nhắn tin qua gmail: nvthuongcl2004@gmail.com");
+        }
     }
 }
