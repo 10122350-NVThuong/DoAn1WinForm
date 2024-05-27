@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIThongTinSanPham));
             this.dtgvQLSP = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.gtxtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
@@ -176,6 +177,7 @@
             // 
             this.btThem.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.Image = ((System.Drawing.Image)(resources.GetObject("btThem.Image")));
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btThem.Location = new System.Drawing.Point(3, 25);
             this.btThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -190,6 +192,7 @@
             // 
             this.btdelete.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btdelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btdelete.Image = ((System.Drawing.Image)(resources.GetObject("btdelete.Image")));
             this.btdelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btdelete.Location = new System.Drawing.Point(3, 82);
             this.btdelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -204,6 +207,7 @@
             // 
             this.btupdate.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btupdate.Image = ((System.Drawing.Image)(resources.GetObject("btupdate.Image")));
             this.btupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btupdate.Location = new System.Drawing.Point(3, 137);
             this.btupdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -218,13 +222,12 @@
             // 
             this.btreset.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btreset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btreset.Image = ((System.Drawing.Image)(resources.GetObject("btreset.Image")));
             this.btreset.Location = new System.Drawing.Point(3, 194);
             this.btreset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btreset.Name = "btreset";
             this.btreset.Size = new System.Drawing.Size(237, 55);
             this.btreset.TabIndex = 9;
-            this.btreset.Text = "Làm mới";
             this.btreset.UseVisualStyleBackColor = true;
             this.btreset.Click += new System.EventHandler(this.btreset_Click);
             // 

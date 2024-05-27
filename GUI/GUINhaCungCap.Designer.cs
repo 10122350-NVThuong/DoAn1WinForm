@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUINhaCungCap));
             this.dtgvNCC = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
@@ -317,6 +318,8 @@
             // btnThem
             // 
             this.btnThem.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThem.Location = new System.Drawing.Point(3, 12);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(223, 52);
@@ -328,6 +331,8 @@
             // btnSua
             // 
             this.btnSua.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.Location = new System.Drawing.Point(3, 64);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(223, 51);
@@ -339,6 +344,8 @@
             // btnXoa
             // 
             this.btnXoa.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(3, 115);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(223, 55);
@@ -350,11 +357,11 @@
             // btnLamMoi
             // 
             this.btnLamMoi.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
             this.btnLamMoi.Location = new System.Drawing.Point(3, 170);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(223, 55);
             this.btnLamMoi.TabIndex = 6;
-            this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 

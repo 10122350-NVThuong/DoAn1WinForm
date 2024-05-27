@@ -42,10 +42,9 @@
             // 
             // label2
             // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(110, 81);
+            this.label2.Location = new System.Drawing.Point(72, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 28);
             this.label2.TabIndex = 15;
@@ -53,10 +52,9 @@
             // 
             // label1
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(112, 81);
+            this.label1.Location = new System.Drawing.Point(80, 105);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 28);
             this.label1.TabIndex = 14;
@@ -91,6 +89,7 @@
             // cbohoadonnhap
             // 
             this.cbohoadonnhap.BackColor = System.Drawing.Color.Transparent;
+            this.cbohoadonnhap.BorderColor = System.Drawing.Color.Black;
             this.cbohoadonnhap.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbohoadonnhap.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbohoadonnhap.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -106,6 +105,7 @@
             // cbohoadonban
             // 
             this.cbohoadonban.BackColor = System.Drawing.Color.Transparent;
+            this.cbohoadonban.BorderColor = System.Drawing.Color.Black;
             this.cbohoadonban.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbohoadonban.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbohoadonban.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -124,10 +124,10 @@
             this.hoadonnhap.Controls.Add(this.btnInHDN);
             this.hoadonnhap.Controls.Add(this.cbohoadonnhap);
             this.hoadonnhap.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.hoadonnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.hoadonnhap.ForeColor = System.Drawing.Color.Black;
             this.hoadonnhap.Location = new System.Drawing.Point(2, 3);
             this.hoadonnhap.Name = "hoadonnhap";
-            this.hoadonnhap.Size = new System.Drawing.Size(355, 292);
+            this.hoadonnhap.Size = new System.Drawing.Size(355, 302);
             this.hoadonnhap.TabIndex = 18;
             this.hoadonnhap.Text = "In chi tiết hóa đơn nhập";
             this.hoadonnhap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -139,10 +139,10 @@
             this.hoadonban.Controls.Add(this.btnInHDX);
             this.hoadonban.Controls.Add(this.cbohoadonban);
             this.hoadonban.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.hoadonban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.hoadonban.ForeColor = System.Drawing.Color.Black;
             this.hoadonban.Location = new System.Drawing.Point(359, 3);
             this.hoadonban.Name = "hoadonban";
-            this.hoadonban.Size = new System.Drawing.Size(344, 292);
+            this.hoadonban.Size = new System.Drawing.Size(344, 302);
             this.hoadonban.TabIndex = 19;
             this.hoadonban.Text = "In chi tiết hóa đơn bán";
             this.hoadonban.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

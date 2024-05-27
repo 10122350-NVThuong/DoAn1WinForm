@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIKhachHang));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.cboLuaChon = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -58,6 +59,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.txtTimKiem);
             this.groupBox3.Controls.Add(this.cboLuaChon);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,14 +112,15 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnreset);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(957, 268);
+            this.groupBox2.Location = new System.Drawing.Point(957, 261);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 252);
+            this.groupBox2.Size = new System.Drawing.Size(200, 259);
             this.groupBox2.TabIndex = 42;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -127,7 +130,9 @@
             this.btnThem.BackColor = System.Drawing.Color.Azure;
             this.btnThem.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnThem.ForeColor = System.Drawing.Color.Black;
-            this.btnThem.Location = new System.Drawing.Point(3, 31);
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(3, 32);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(194, 54);
             this.btnThem.TabIndex = 30;
@@ -140,7 +145,9 @@
             this.btnSua.BackColor = System.Drawing.Color.Azure;
             this.btnSua.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSua.ForeColor = System.Drawing.Color.Black;
-            this.btnSua.Location = new System.Drawing.Point(3, 85);
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(3, 86);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(194, 54);
             this.btnSua.TabIndex = 31;
@@ -153,7 +160,9 @@
             this.btnXoa.BackColor = System.Drawing.Color.Azure;
             this.btnXoa.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnXoa.Location = new System.Drawing.Point(3, 139);
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(3, 140);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(194, 55);
             this.btnXoa.TabIndex = 33;
@@ -166,16 +175,17 @@
             this.btnreset.BackColor = System.Drawing.Color.Azure;
             this.btnreset.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnreset.ForeColor = System.Drawing.Color.Black;
-            this.btnreset.Location = new System.Drawing.Point(3, 194);
+            this.btnreset.Image = ((System.Drawing.Image)(resources.GetObject("btnreset.Image")));
+            this.btnreset.Location = new System.Drawing.Point(3, 195);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(194, 55);
+            this.btnreset.Size = new System.Drawing.Size(194, 61);
             this.btnreset.TabIndex = 32;
-            this.btnreset.Text = "Làm mới";
             this.btnreset.UseVisualStyleBackColor = false;
             this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.txtIDKH);
             this.groupBox1.Controls.Add(this.txtGioiTinh);
             this.groupBox1.Controls.Add(this.txtTenKhachHang);
@@ -191,7 +201,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(1, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(877, 259);
+            this.groupBox1.Size = new System.Drawing.Size(882, 259);
             this.groupBox1.TabIndex = 41;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin khách hàng";
@@ -400,7 +410,7 @@
             this.dtgvKH.Name = "dtgvKH";
             this.dtgvKH.RowHeadersWidth = 51;
             this.dtgvKH.RowTemplate.Height = 24;
-            this.dtgvKH.Size = new System.Drawing.Size(953, 249);
+            this.dtgvKH.Size = new System.Drawing.Size(956, 252);
             this.dtgvKH.TabIndex = 44;
             this.dtgvKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvKH_CellClick);
             // 
@@ -408,6 +418,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1156, 522);
             this.Controls.Add(this.dtgvKH);
             this.Controls.Add(this.groupBox3);

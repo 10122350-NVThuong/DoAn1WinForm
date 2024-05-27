@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIThemSanPhamVaoHoaDonNhap));
             this.dtgvSP = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -160,17 +161,19 @@
             // 
             // btnlm
             // 
-            this.btnlm.Location = new System.Drawing.Point(53, 91);
+            this.btnlm.Image = ((System.Drawing.Image)(resources.GetObject("btnlm.Image")));
+            this.btnlm.Location = new System.Drawing.Point(40, 79);
             this.btnlm.Name = "btnlm";
-            this.btnlm.Size = new System.Drawing.Size(204, 42);
+            this.btnlm.Size = new System.Drawing.Size(204, 78);
             this.btnlm.TabIndex = 1;
-            this.btnlm.Text = "Làm mới";
             this.btnlm.UseVisualStyleBackColor = true;
             this.btnlm.Click += new System.EventHandler(this.btnlm_Click);
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(53, 33);
+            this.btThem.Image = ((System.Drawing.Image)(resources.GetObject("btThem.Image")));
+            this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThem.Location = new System.Drawing.Point(40, 21);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(204, 43);
             this.btThem.TabIndex = 0;
@@ -180,7 +183,9 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(53, 142);
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(40, 163);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(204, 45);
             this.btnThoat.TabIndex = 21;

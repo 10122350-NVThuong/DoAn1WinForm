@@ -56,17 +56,18 @@
             // dtgvHDB
             // 
             this.dtgvHDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvHDB.Location = new System.Drawing.Point(2, 236);
+            this.dtgvHDB.Location = new System.Drawing.Point(2, 224);
             this.dtgvHDB.Name = "dtgvHDB";
             this.dtgvHDB.RowHeadersWidth = 51;
             this.dtgvHDB.RowTemplate.Height = 24;
-            this.dtgvHDB.Size = new System.Drawing.Size(741, 259);
+            this.dtgvHDB.Size = new System.Drawing.Size(747, 271);
             this.dtgvHDB.TabIndex = 37;
             this.dtgvHDB.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvHDB_CellClick);
             this.dtgvHDB.DoubleClick += new System.EventHandler(this.dtgvHDB_DoubleClick);
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.txtTimKiem);
             this.groupBox3.Controls.Add(this.cboLuaChon);
             this.groupBox3.Location = new System.Drawing.Point(749, 224);
@@ -86,12 +87,14 @@
             this.txtTimKiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTimKiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTimKiem.ForeColor = System.Drawing.Color.Black;
             this.txtTimKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimKiem.Location = new System.Drawing.Point(18, 64);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.PasswordChar = '\0';
-            this.txtTimKiem.PlaceholderText = "";
+            this.txtTimKiem.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtTimKiem.PlaceholderText = "Nhập thông tin tìm kiếm";
             this.txtTimKiem.SelectedText = "";
             this.txtTimKiem.Size = new System.Drawing.Size(278, 45);
             this.txtTimKiem.TabIndex = 1;
@@ -119,6 +122,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.btnreset);
             this.groupBox2.Controls.Add(this.btnXoaHoaDon);
             this.groupBox2.Controls.Add(this.btnTaoHoaDon);
@@ -164,6 +168,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.cboIDNV);
             this.groupBox1.Controls.Add(this.cboIDKH);
             this.groupBox1.Controls.Add(this.txtTrangThai);

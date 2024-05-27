@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUIThemSanPhamVaoHoaDonXuat));
             this.dtgvSanPham = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -52,7 +53,7 @@
             this.dtgvSanPham.Name = "dtgvSanPham";
             this.dtgvSanPham.RowHeadersWidth = 51;
             this.dtgvSanPham.RowTemplate.Height = 24;
-            this.dtgvSanPham.Size = new System.Drawing.Size(847, 414);
+            this.dtgvSanPham.Size = new System.Drawing.Size(847, 446);
             this.dtgvSanPham.TabIndex = 28;
             this.dtgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvSanPham_CellClick);
             // 
@@ -61,18 +62,20 @@
             this.groupBox1.Controls.Add(this.btnThoat);
             this.groupBox1.Controls.Add(this.btnlm);
             this.groupBox1.Controls.Add(this.btThem);
-            this.groupBox1.Location = new System.Drawing.Point(856, 243);
+            this.groupBox1.Location = new System.Drawing.Point(856, 228);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(304, 174);
+            this.groupBox1.Size = new System.Drawing.Size(304, 221);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng";
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(26, 124);
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(49, 165);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(208, 37);
+            this.btnThoat.Size = new System.Drawing.Size(208, 50);
             this.btnThoat.TabIndex = 22;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -80,19 +83,21 @@
             // 
             // btnlm
             // 
-            this.btnlm.Location = new System.Drawing.Point(26, 68);
+            this.btnlm.Image = ((System.Drawing.Image)(resources.GetObject("btnlm.Image")));
+            this.btnlm.Location = new System.Drawing.Point(49, 88);
             this.btnlm.Name = "btnlm";
-            this.btnlm.Size = new System.Drawing.Size(208, 41);
+            this.btnlm.Size = new System.Drawing.Size(208, 71);
             this.btnlm.TabIndex = 1;
-            this.btnlm.Text = "Làm mới";
             this.btnlm.UseVisualStyleBackColor = true;
             this.btnlm.Click += new System.EventHandler(this.btnlm_Click);
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(26, 21);
+            this.btThem.Image = ((System.Drawing.Image)(resources.GetObject("btThem.Image")));
+            this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThem.Location = new System.Drawing.Point(49, 21);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(208, 33);
+            this.btThem.Size = new System.Drawing.Size(208, 47);
             this.btThem.TabIndex = 0;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
@@ -108,14 +113,14 @@
             this.groupBox2.Controls.Add(this.txtMaSP);
             this.groupBox2.Location = new System.Drawing.Point(856, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(304, 234);
+            this.groupBox2.Size = new System.Drawing.Size(304, 219);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sản phẩm";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(6, 30);
+            this.label1.Location = new System.Drawing.Point(3, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 46);
             this.label1.TabIndex = 11;
@@ -133,7 +138,7 @@
             this.txtGiaBan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGiaBan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtGiaBan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGiaBan.Location = new System.Drawing.Point(114, 173);
+            this.txtGiaBan.Location = new System.Drawing.Point(111, 146);
             this.txtGiaBan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtGiaBan.Name = "txtGiaBan";
             this.txtGiaBan.PasswordChar = '\0';
@@ -144,7 +149,7 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(20, 99);
+            this.label2.Location = new System.Drawing.Point(17, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 44);
             this.label2.TabIndex = 12;
@@ -153,7 +158,7 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(20, 172);
+            this.label3.Location = new System.Drawing.Point(17, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 44);
             this.label3.TabIndex = 15;
@@ -171,7 +176,7 @@
             this.txtSoLuongBan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoLuongBan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSoLuongBan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoLuongBan.Location = new System.Drawing.Point(114, 99);
+            this.txtSoLuongBan.Location = new System.Drawing.Point(111, 82);
             this.txtSoLuongBan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSoLuongBan.Name = "txtSoLuongBan";
             this.txtSoLuongBan.PasswordChar = '\0';
@@ -191,7 +196,7 @@
             this.txtMaSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaSP.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaSP.Location = new System.Drawing.Point(114, 30);
+            this.txtMaSP.Location = new System.Drawing.Point(111, 18);
             this.txtMaSP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.PasswordChar = '\0';
@@ -204,7 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 420);
+            this.ClientSize = new System.Drawing.Size(1160, 450);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dtgvSanPham);
             this.Controls.Add(this.groupBox1);

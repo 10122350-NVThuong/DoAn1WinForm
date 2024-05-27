@@ -56,22 +56,23 @@
             // dtgvHDN
             // 
             this.dtgvHDN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvHDN.Location = new System.Drawing.Point(3, 236);
+            this.dtgvHDN.Location = new System.Drawing.Point(3, 231);
             this.dtgvHDN.Name = "dtgvHDN";
             this.dtgvHDN.RowHeadersWidth = 51;
             this.dtgvHDN.RowTemplate.Height = 24;
-            this.dtgvHDN.Size = new System.Drawing.Size(721, 270);
+            this.dtgvHDN.Size = new System.Drawing.Size(721, 275);
             this.dtgvHDN.TabIndex = 33;
             this.dtgvHDN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvHDN_CellClick);
             this.dtgvHDN.DoubleClick += new System.EventHandler(this.dtgvHDN_DoubleClick);
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.txtTimKiem);
             this.groupBox3.Controls.Add(this.cboLuaChon);
-            this.groupBox3.Location = new System.Drawing.Point(727, 236);
+            this.groupBox3.Location = new System.Drawing.Point(727, 231);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(274, 120);
+            this.groupBox3.Size = new System.Drawing.Size(274, 121);
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm";
@@ -86,12 +87,14 @@
             this.txtTimKiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTimKiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTimKiem.ForeColor = System.Drawing.Color.Black;
             this.txtTimKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimKiem.Location = new System.Drawing.Point(24, 64);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.PasswordChar = '\0';
-            this.txtTimKiem.PlaceholderText = "";
+            this.txtTimKiem.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtTimKiem.PlaceholderText = "Nhập thông tin tìm kiếm";
             this.txtTimKiem.SelectedText = "";
             this.txtTimKiem.Size = new System.Drawing.Size(225, 44);
             this.txtTimKiem.TabIndex = 1;
@@ -105,7 +108,7 @@
             this.cboLuaChon.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboLuaChon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboLuaChon.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboLuaChon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboLuaChon.ForeColor = System.Drawing.Color.Black;
             this.cboLuaChon.ItemHeight = 30;
             this.cboLuaChon.Items.AddRange(new object[] {
             "Mã Hóa Đơn",
@@ -119,12 +122,13 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.btnreset);
             this.groupBox2.Controls.Add(this.btnXoaHoaDon);
             this.groupBox2.Controls.Add(this.btnTaoHoaDon);
-            this.groupBox2.Location = new System.Drawing.Point(727, 362);
+            this.groupBox2.Location = new System.Drawing.Point(727, 351);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(274, 150);
+            this.groupBox2.Size = new System.Drawing.Size(274, 161);
             this.groupBox2.TabIndex = 31;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -164,6 +168,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.cboIDNV);
             this.groupBox1.Controls.Add(this.cboIDNCC);
             this.groupBox1.Controls.Add(this.txtTrangThai);
@@ -176,7 +181,7 @@
             this.groupBox1.Controls.Add(this.lbl4);
             this.groupBox1.Location = new System.Drawing.Point(-2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(991, 228);
+            this.groupBox1.Size = new System.Drawing.Size(1000, 228);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin hóa đơn";

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnlm = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
@@ -75,7 +75,7 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(291, 181);
+            this.groupBox4.Size = new System.Drawing.Size(246, 181);
             this.groupBox4.TabIndex = 36;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Chức năng";
@@ -86,7 +86,7 @@
             this.btnlm.Location = new System.Drawing.Point(2, 134);
             this.btnlm.Margin = new System.Windows.Forms.Padding(2);
             this.btnlm.Name = "btnlm";
-            this.btnlm.Size = new System.Drawing.Size(287, 39);
+            this.btnlm.Size = new System.Drawing.Size(242, 39);
             this.btnlm.TabIndex = 3;
             this.btnlm.Text = "Làm mới";
             this.btnlm.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@
             this.btXoa.Location = new System.Drawing.Point(2, 95);
             this.btXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(287, 39);
+            this.btXoa.Size = new System.Drawing.Size(242, 39);
             this.btXoa.TabIndex = 2;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@
             this.btSua.Location = new System.Drawing.Point(2, 56);
             this.btSua.Margin = new System.Windows.Forms.Padding(2);
             this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(287, 39);
+            this.btSua.Size = new System.Drawing.Size(242, 39);
             this.btSua.TabIndex = 1;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
@@ -122,7 +122,7 @@
             this.btnThem.Location = new System.Drawing.Point(2, 17);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(287, 39);
+            this.btnThem.Size = new System.Drawing.Size(242, 39);
             this.btnThem.TabIndex = 0;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -306,11 +306,11 @@
             this.groupBox2.Controls.Add(this.txtIDKH);
             this.groupBox2.Controls.Add(this.lbl3);
             this.groupBox2.Controls.Add(this.lbl4);
-            this.groupBox2.Location = new System.Drawing.Point(479, 4);
+            this.groupBox2.Location = new System.Drawing.Point(440, 2);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(453, 163);
+            this.groupBox2.Size = new System.Drawing.Size(442, 163);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin khách hàng";
@@ -387,7 +387,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(473, 165);
+            this.groupBox1.Size = new System.Drawing.Size(436, 165);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
@@ -456,37 +456,37 @@
             // 
             // dtgvCTHDB
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvCTHDB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvCTHDB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvCTHDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvCTHDB.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvCTHDB.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvCTHDB.Location = new System.Drawing.Point(0, 356);
             this.dtgvCTHDB.Margin = new System.Windows.Forms.Padding(2);
             this.dtgvCTHDB.Name = "dtgvCTHDB";
             this.dtgvCTHDB.RowHeadersWidth = 51;
             this.dtgvCTHDB.RowTemplate.Height = 24;
-            this.dtgvCTHDB.Size = new System.Drawing.Size(823, 226);
+            this.dtgvCTHDB.Size = new System.Drawing.Size(812, 226);
             this.dtgvCTHDB.TabIndex = 30;
             this.dtgvCTHDB.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvCTHDB_CellClick);
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(828, 357);
+            this.btnThanhToan.Location = new System.Drawing.Point(817, 357);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(106, 226);
+            this.btnThanhToan.Size = new System.Drawing.Size(72, 226);
             this.btnThanhToan.TabIndex = 48;
             this.btnThanhToan.Text = "Thanh Toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
@@ -496,7 +496,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 584);
+            this.ClientSize = new System.Drawing.Size(896, 584);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);

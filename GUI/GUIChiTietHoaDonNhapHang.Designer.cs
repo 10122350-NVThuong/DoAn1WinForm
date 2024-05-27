@@ -41,6 +41,8 @@
             this.txtMaSP = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtIDHoaDonNhap = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl5 = new System.Windows.Forms.Label();
+            this.lbl9 = new System.Windows.Forms.Label();
+            this.lblTongTien = new System.Windows.Forms.Label();
             this.lbl6 = new System.Windows.Forms.Label();
             this.lbl7 = new System.Windows.Forms.Label();
             this.lbl8 = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@
             this.txtIDNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.lbl9 = new System.Windows.Forms.Label();
-            this.lblTongTien = new System.Windows.Forms.Label();
             this.dtgvChitietHDNhap = new System.Windows.Forms.DataGridView();
             this.lbl4 = new System.Windows.Forms.Label();
             this.lbl3 = new System.Windows.Forms.Label();
@@ -67,6 +67,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.White;
             this.groupBox4.Controls.Add(this.btnlammoi);
             this.groupBox4.Controls.Add(this.btnXoa);
             this.groupBox4.Controls.Add(this.btnSua);
@@ -131,6 +132,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.txtGiaCa);
             this.groupBox3.Controls.Add(this.txtSoLuongNhap);
             this.groupBox3.Controls.Add(this.txtMaSP);
@@ -245,6 +247,28 @@
             this.lbl5.Text = "Mã hóa đơn";
             this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lbl9
+            // 
+            this.lbl9.Location = new System.Drawing.Point(45, 132);
+            this.lbl9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl9.Name = "lbl9";
+            this.lbl9.Size = new System.Drawing.Size(68, 26);
+            this.lbl9.TabIndex = 39;
+            this.lbl9.Text = "Tổng tiền:";
+            this.lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTongTien
+            // 
+            this.lblTongTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTongTien.ForeColor = System.Drawing.Color.Black;
+            this.lblTongTien.Location = new System.Drawing.Point(117, 133);
+            this.lblTongTien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(106, 26);
+            this.lblTongTien.TabIndex = 38;
+            this.lblTongTien.Text = "label21";
+            this.lblTongTien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lbl6
             // 
             this.lbl6.Location = new System.Drawing.Point(37, 80);
@@ -277,6 +301,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.txtTenNhanVien);
             this.groupBox1.Controls.Add(this.txtIDNV);
             this.groupBox1.Controls.Add(this.lbl2);
@@ -353,28 +378,6 @@
             this.lbl1.Text = "Mã nhân viên";
             this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl9
-            // 
-            this.lbl9.Location = new System.Drawing.Point(45, 132);
-            this.lbl9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl9.Name = "lbl9";
-            this.lbl9.Size = new System.Drawing.Size(68, 26);
-            this.lbl9.TabIndex = 39;
-            this.lbl9.Text = "Tổng tiền:";
-            this.lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTongTien
-            // 
-            this.lblTongTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTongTien.ForeColor = System.Drawing.Color.Black;
-            this.lblTongTien.Location = new System.Drawing.Point(117, 133);
-            this.lblTongTien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTongTien.Name = "lblTongTien";
-            this.lblTongTien.Size = new System.Drawing.Size(106, 26);
-            this.lblTongTien.TabIndex = 38;
-            this.lblTongTien.Text = "label21";
-            this.lblTongTien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // dtgvChitietHDNhap
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -425,6 +428,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.txtTenNCC);
             this.groupBox2.Controls.Add(this.txtIDNCC);
             this.groupBox2.Controls.Add(this.lbl3);

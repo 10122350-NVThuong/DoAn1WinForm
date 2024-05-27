@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUINhanVien));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -149,6 +150,8 @@
             // 
             this.btSua.BackColor = System.Drawing.Color.AliceBlue;
             this.btSua.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btSua.Image = ((System.Drawing.Image)(resources.GetObject("btSua.Image")));
+            this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btSua.Location = new System.Drawing.Point(3, 21);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(196, 69);
@@ -161,6 +164,8 @@
             // 
             this.btXoa.BackColor = System.Drawing.Color.AliceBlue;
             this.btXoa.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btXoa.Image = ((System.Drawing.Image)(resources.GetObject("btXoa.Image")));
+            this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btXoa.Location = new System.Drawing.Point(3, 90);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(196, 64);
@@ -173,11 +178,11 @@
             // 
             this.btnreset.BackColor = System.Drawing.Color.AliceBlue;
             this.btnreset.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnreset.Image = ((System.Drawing.Image)(resources.GetObject("btnreset.Image")));
             this.btnreset.Location = new System.Drawing.Point(3, 154);
             this.btnreset.Name = "btnreset";
             this.btnreset.Size = new System.Drawing.Size(196, 63);
             this.btnreset.TabIndex = 19;
-            this.btnreset.Text = "Làm mới";
             this.btnreset.UseVisualStyleBackColor = false;
             this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
             // 
